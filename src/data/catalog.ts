@@ -2,9 +2,10 @@ import type { Product } from './products';
 import { CERAMIC_BALLS } from './ceramicBalls';
 import { ADSORBENTS } from './adsorbents';
 import { FILTER_MEDIA } from './filterMedia';
+import { HONEYCOMB } from './honeycomb';
 
-// 新增品类产品合集（瓷球 / 吸附剂 / 滤料）
-export const CATALOG: Product[] = [...CERAMIC_BALLS, ...ADSORBENTS, ...FILTER_MEDIA];
+// 新增品类产品合集（瓷球 / 吸附剂 / 滤料 / 蜂窝陶瓷）
+export const CATALOG: Product[] = [...CERAMIC_BALLS, ...ADSORBENTS, ...FILTER_MEDIA, ...HONEYCOMB];
 
 export const itemsOf = (category: string) => CATALOG.filter((p) => p.category === category);
 

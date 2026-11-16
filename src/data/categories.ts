@@ -77,4 +77,25 @@ export const NEW_CATEGORIES: CategoryMeta[] = [
       { label: 'Applications', href: '/applications/', desc: 'Wastewater, flue gas and water treatment duties.' },
     ],
   },
+  {
+    slug: 'honeycomb-ceramics',
+    label: 'Honeycomb Ceramics',
+    title: 'Honeycomb Ceramic Substrates | RTO Media and DPF Cordierite',
+    description:
+      'Ceramic honeycomb media for regenerative thermal oxidisers and cordierite wall-flow substrates for diesel particulate filters. High surface area at low pressure drop.',
+    h1: 'Honeycomb Ceramics',
+    sub:
+      'A honeycomb does one thing better than any dumped bed: it puts a large surface into a small volume without asking the gas to pay for it in pressure drop. That is worth a great deal in an RTO, where fan power is the main running cost, and in a wall-flow filter, where the same geometry becomes the filter itself.',
+    intro: [
+      'Ceramic honeycomb is a straight-channel monolith, extruded in blocks and stacked into whatever bed the duty needs. Because the channels are straight and open, gas passes with far less resistance than through a dumped bed of saddles or rings of comparable surface area, which is why the format shows up wherever heat has to be moved in and out of a large gas flow.',
+      'Two duties account for most of it. In a regenerative thermal oxidiser the honeycomb is the heat exchange medium, storing heat from the cleaned exhaust and giving it back to the incoming dirty gas. In a diesel particulate filter the same wall-flow geometry is the filter, with alternate channels plugged so the gas is forced through the porous wall and the soot is left behind.',
+      'Both are ceramic, both are extruded, and both live or die on the same two properties: thermal shock resistance and tolerance of whatever the gas carries. Fouling is the failure mode to design against, not strength.',
+    ],
+    relatedTitle: 'Related to honeycomb ceramics',
+    related: [
+      { label: 'Ceramic Balls', href: '/ceramic-balls/', desc: 'Support and hold-down media for beds above and below a catalyst.' },
+      { label: 'Filter Media', href: '/filter-media/', desc: 'Granular media for water and wastewater rather than gas.' },
+      { label: 'Ceramic Structured Packing', href: '/structured-packing/ceramic-structured-packing/', desc: 'The other ceramic geometry used for gas-liquid contact.' },
+    ],
+  },
 ];

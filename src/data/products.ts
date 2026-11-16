@@ -1005,4 +1005,408 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
+  {
+    slug: 'ptfe-pall-ring',
+    name: 'PTFE Pall Ring',
+    image: '/images/products/ptfe-pall-ring.webp',
+    title: 'PTFE Pall Ring Supplier | Teflon Tower Packing for HF and Strong Acids',
+    h1: 'PTFE Pall Ring (Teflon Tower Packing)',
+    metaDescription:
+      'PTFE pall rings and Raschig rings for HF, wet chlorine, strong acids and hot alkali. Chemically inert, no metal ion leaching, service up to about 250 C.',
+    targetKeyword: 'PTFE pall ring',
+    category: 'random-packing',
+    intro:
+      'PTFE is what you specify when nothing else survives. A PTFE pall ring keeps the open, ribbed geometry of a metal or plastic pall ring while removing the two failure modes that decide column life in aggressive service: chemical attack, and metal ion leaching into the product. It is used where hydrofluoric acid, wet chlorine, bromine, hot concentrated sulphuric acid or strong alkali would destroy ceramic, PP or stainless within months.',
+    specs: [
+      { item: 'Form', value: 'Ribbed pall ring with internal tongue, moulded' },
+      { item: 'Material', value: 'Virgin PTFE; PTFE with graphite or glass on request' },
+      { item: 'Nominal sizes', value: '25 mm, 38 mm, 50 mm' },
+      { item: 'Service temperature', value: 'Up to about 250 C continuous, far beyond PP or PVDF' },
+      { item: 'Chemical resistance', value: 'Inert to virtually all acids, bases, halogens and solvents' },
+      { item: 'Mechanical note', value: 'Softer than ceramic or metal; bed depth has to be checked for creep load' },
+      { item: 'Selection inputs', value: 'Column diameter, gas and liquid loads, temperature, trace contaminants' },
+    ],
+    materials: ['Virgin PTFE', 'PTFE with graphite', 'PTFE with glass fibre on request'],
+    applications: [
+      'HF absorption and stripping',
+      'Chlor-alkali and wet chlorine scrubbing',
+      'Bromine and halogen handling',
+      'Hot concentrated acid absorption',
+      'High-purity duty where metal ions are not acceptable',
+      'Solvent recovery where plastics swell',
+    ],
+    comparison:
+      'Against ceramic, PTFE removes the HF and hot-alkali attack problem and survives thermal shock, at a higher price per cubic metre and with lower mechanical stiffness, which matters when the bed is deep. Against PP and PVDF it extends the usable temperature range and covers oxidising acids that would embrittle either. Against metal it removes corrosion entirely, and with it the risk of iron or nickel contamination in the product.',
+    faqs: [
+      {
+        q: 'Why choose PTFE instead of ceramic for an acid tower?',
+        a: 'Ceramic is cheaper and stiffer, but silica-based bodies are attacked by HF and by hot concentrated alkali, and thermal shock can crack them. PTFE is unaffected by either. If the tower handles HF, wet chlorine or hot caustic, PTFE is usually the only packing that survives a realistic campaign length.',
+      },
+      {
+        q: 'What is the maximum service temperature?',
+        a: 'About 250 C continuously for virgin PTFE, well above PP or PVDF. Above that, or where the bed load is very high, a metal or ceramic packing is the better choice: the limitation of PTFE in a deep bed is mechanical rather than chemical.',
+      },
+      {
+        q: 'Can the packing be re-used after a shutdown?',
+        a: 'Yes. It does not corrode or embrittle, so it can be washed, inspected and re-loaded, and it is often recovered and re-used when a column is re-packed with a different geometry.',
+      },
+      {
+        q: 'Does the softness of PTFE cause problems?',
+        a: 'It can creep under load. In deep beds we specify a properly designed support plate and, at larger diameters, a thicker wall; we check the load against your bed depth before quoting rather than after.',
+      },
+    ],
+  },
+  {
+    slug: 'ceramic-berl-saddle',
+    name: 'Ceramic Berl Saddle',
+    image: '/images/products/ceramic-berl-saddle.webp',
+    title: 'Ceramic Berl Saddle Supplier | Acid-Proof Saddles for Absorption Towers',
+    h1: 'Ceramic Berl Saddle',
+    metaDescription:
+      'Berl saddles in chemical stoneware for acid absorption, drying towers and scrubbers. Lower pressure drop than Raschig rings, lower cost than Intalox saddles.',
+    targetKeyword: 'ceramic Berl saddle',
+    category: 'random-packing',
+    intro:
+      'The Berl saddle is the oldest of the saddle family and still one of the most practical. Its arched shape stacks less densely than a ring, so gas finds a path through the bed with less resistance, and liquid spreads sideways along the curved surface instead of running straight down. For acid absorption, drying and cooling towers where the duty is dirty and the budget is tight, it remains a sound choice.',
+    specs: [
+      { item: 'Form', value: 'Arched saddle, no internal partitions' },
+      { item: 'Nominal sizes', value: '25 mm, 38 mm, 50 mm, 76 mm' },
+      { item: 'Material', value: 'Chemical stoneware and acid-proof porcelain' },
+      { item: 'Porosity', value: 'Low: dense body that resists acid penetration' },
+      { item: 'Thermal behaviour', value: 'Handles normal drying tower cycling; avoid quenching a hot bed' },
+      { item: 'Loading', value: 'Random dumped over a graded support layer' },
+      { item: 'Selection inputs', value: 'Tower diameter, gas and liquid rates, acid concentration and temperature' },
+    ],
+    materials: ['Chemical stoneware', 'Acid-proof porcelain'],
+    applications: [
+      'Sulphuric acid drying and absorption towers',
+      'Hydrochloric acid absorption',
+      'Scrubbers and gas cooling towers',
+      'Drying of chlorine and other wet gases',
+      'Pickling line and fume scrubbing',
+    ],
+    comparison:
+      'Against a ceramic Raschig ring the Berl saddle gives lower pressure drop and higher capacity for a modest cost increase. Against an Intalox saddle it is cheaper and more open, but its liquid redistribution is weaker, so it suits shallow beds better than tall ones. Against a modern high-performance ring it is heavier and less efficient, which is why it is chosen for robustness and price rather than for performance.',
+    faqs: [
+      {
+        q: 'Berl saddle or Intalox saddle?',
+        a: 'Berl is the cheaper, more open shape; Intalox redistributes liquid better and gives higher efficiency in a tall bed. For a shallow, dirty scrubber Berl is usually enough. Where the tower height is set by mass transfer, Intalox or a high-performance ring is the better investment.',
+      },
+      {
+        q: 'Which size should I use?',
+        a: 'Small sizes give more surface per cubic metre and suit smaller diameter towers; large sizes keep pressure drop down in big towers. As a rule the packing should be a modest fraction of the column diameter so the bed does not bridge against the wall.',
+      },
+      {
+        q: 'Will the saddles break in service?',
+        a: 'Not if they are loaded and wetted properly. Failures come from thermal shock, such as dumping cold liquid into a hot bed, and from point loading on a badly designed support. We size the support layer together with the packing.',
+      },
+      {
+        q: 'Can it handle hydrofluoric acid?',
+        a: 'No. Ceramic bodies are attacked by HF. For HF duty use PTFE packing instead, and check that the support and internals are suitable as well.',
+      },
+    ],
+  },
+  {
+    slug: 'ceramic-cross-ring',
+    name: 'Ceramic Cross Partition Ring',
+    image: '/images/products/ceramic-cross-ring.webp',
+    title: 'Ceramic Cross Partition Ring | Heat Storage and Dust-Laden Gas Duty',
+    h1: 'Ceramic Cross Partition Ring',
+    metaDescription:
+      'Ceramic cross partition rings for dust-laden gas cooling, heat storage and acid towers. Thick-walled, high crushing strength, tolerant of thermal cycling.',
+    targetKeyword: 'ceramic cross partition ring',
+    category: 'random-packing',
+    intro:
+      'A cross partition ring is a ring with internal cross walls. That one detail changes what the packing is good at. The partitions carry load far better than an open ring, so the shape survives deep beds and dirty service, while the divided internal volume keeps splitting and recombining the gas path. It is the shape you reach for when the duty is dusty, hot, or both.',
+    specs: [
+      { item: 'Form', value: 'Ring with internal cross partitions' },
+      { item: 'Nominal sizes', value: '25 mm to 100 mm' },
+      { item: 'Material', value: 'Chemical stoneware; high-alumina body for hotter duty' },
+      { item: 'Strength', value: 'Thick walls give high crushing strength for deep beds' },
+      { item: 'Duty', value: 'Heat exchange, gas cooling, dust-tolerant mass transfer' },
+      { item: 'Fouling', value: 'Better than a fine ring, but the bed still needs a washing provision' },
+      { item: 'Selection inputs', value: 'Gas temperature and dust loading, bed depth, cooling medium, allowable pressure drop' },
+    ],
+    materials: ['Chemical stoneware', 'High alumina body'],
+    applications: [
+      'Dust-laden gas cooling and washing towers',
+      'Heat storage and regenerative heat exchange',
+      'Sulphuric acid drying towers',
+      'Gas cooling ahead of scrubbing',
+      'Combustion air and hot blast preheating beds',
+    ],
+    comparison:
+      'Against a Berl saddle the cross ring is heavier and gives less surface per cubic metre, but it resists crushing and stands up to dust far better because the partitions stop the bed compacting. Against structured packing it is far more tolerant of fouling, which is why it survives gas streams that would blind a structured element within weeks.',
+    faqs: [
+      {
+        q: 'Why use a partitioned ring instead of an open ring?',
+        a: 'The internal walls carry load, so a deep bed does not crush the bottom layer, and they divide the gas path so the stream is repeatedly split and recombined. In dust-laden duty that also stops stable channels forming.',
+      },
+      {
+        q: 'Is it used for mass transfer or heat transfer?',
+        a: 'Both, but its strength is heat duty with dirty gas. Where the job is pure mass transfer in a clean stream, a shape with more surface area will be more efficient per metre of bed.',
+      },
+      {
+        q: 'How do I keep the bed from blocking with dust?',
+        a: 'Design in a flushing or soot-blowing cycle and choose a larger nominal size than you would for a clean stream. A coarse bed with periodic washing beats a fine bed that blinds.',
+      },
+      {
+        q: 'Which body should I choose?',
+        a: 'Stoneware for acid duty at moderate temperature. Where the bed runs hot or cycles thermally, a high-alumina body with better thermal shock resistance is the safer choice.',
+      },
+    ],
+  },
+  {
+    slug: 'ceramic-y-partition-ring',
+    name: 'Ceramic Y-Type Partition Ring',
+    image: '/images/products/ceramic-y-partition-ring.webp',
+    title: 'Ceramic Y-Partition Ring | Heat Storage and Acid Scrubber Packing',
+    h1: 'Ceramic Y-Type Partition Ring',
+    metaDescription:
+      'Ceramic Y-partition rings with Y-shaped internal walls for regenerative heat storage, gas cooling and acid scrubber duty. High strength with an open geometry.',
+    targetKeyword: 'ceramic Y partition ring',
+    category: 'random-packing',
+    intro:
+      'The Y partition ring places Y-shaped walls inside a ceramic ring, so the internal volume is divided into passages that keep the shape stiff while giving gas a tortuous path through the bed. Compared with a plain ring it holds its form under load, and compared with a cross-partition ring it leaves more open volume, which keeps pressure drop lower where flow is high.',
+    specs: [
+      { item: 'Form', value: 'Ring with internal Y-shaped partitions' },
+      { item: 'Nominal sizes', value: '38 mm to 100 mm' },
+      { item: 'Material', value: 'Chemical stoneware; high-alumina on request' },
+      { item: 'Strength', value: 'Partitioned walls give good crushing strength at moderate weight' },
+      { item: 'Duty', value: 'Heat storage, gas cooling, absorption in acid service' },
+      { item: 'Loading', value: 'Random dumped over a graded support layer' },
+      { item: 'Selection inputs', value: 'Gas flow and temperature, bed depth, allowable pressure drop, acid environment' },
+    ],
+    materials: ['Chemical stoneware', 'High alumina on request'],
+    applications: [
+      'Regenerative heat storage beds',
+      'Hot gas cooling towers',
+      'Acid absorption and scrubbing',
+      'Sulphuric acid plant duty',
+      'Emission control washing towers',
+    ],
+    comparison:
+      'Against the cross partition ring the Y shape is more open, so pressure drop is lower and the bed fouls less quickly, at some cost in surface area and strength. Against a Berl saddle it is stronger and better able to carry a deep bed. In practice the choice between Y ring and cross ring comes down to whether the limiting factor is pressure drop or bed strength.',
+    faqs: [
+      {
+        q: 'Y ring or cross ring?',
+        a: 'If pressure drop or dust is the constraint, the Y ring. If bed depth and crushing load are the constraint, the cross ring. Both are ceramic, so neither is suitable for HF.',
+      },
+      {
+        q: 'What is it used for in a sulphuric acid plant?',
+        a: 'Mainly as heat storage and gas cooling media, and in drying tower duty. It tolerates the acid and the thermal cycling that the duty imposes, which is what limits other materials.',
+      },
+      {
+        q: 'How deep a bed can it carry?',
+        a: 'That depends on body strength and size. Send us the bed depth and the liquid load and we will check the crushing load and recommend the support layer grading.',
+      },
+      {
+        q: 'Is a high-alumina version available?',
+        a: 'Yes, on request, where the operating temperature or thermal cycling is beyond what stoneware handles comfortably.',
+      },
+    ],
+  },
+  {
+    slug: 'metal-cascade-mini-ring',
+    name: 'Metal Cascade Mini Ring',
+    image: '/images/products/metal-cascade-mini-ring.webp',
+    title: 'Metal Cascade Mini Ring (CMR) | High Capacity Random Packing',
+    h1: 'Metal Cascade Mini Ring (CMR)',
+    metaDescription:
+      'Metal cascade mini rings in SS304, SS316L and carbon steel for vacuum distillation and column debottlenecking. High capacity, low pressure drop per stage.',
+    targetKeyword: 'metal cascade mini ring',
+    category: 'random-packing',
+    intro:
+      'The cascade mini ring was designed for one purpose: getting more capacity out of a column that is already built. Its shallow, asymmetric shape stacks with a preferred orientation, so the bed has a high void fraction and a short gas path. The result is a lower pressure drop per theoretical stage than a pall ring, which in vacuum service translates directly into either more throughput or a better separation at the same boil-up.',
+    specs: [
+      { item: 'Form', value: 'Shallow asymmetric ring with stepped, cascading wall' },
+      { item: 'Material', value: 'SS304, SS316L, carbon steel; other alloys on request' },
+      { item: 'Nominal sizes', value: '25 mm, 38 mm, 50 mm, 70 mm' },
+      { item: 'Strength', value: 'Lower mechanical strength than a pall ring; bed depth has to be checked' },
+      { item: 'Duty', value: 'Vacuum and heat-sensitive distillation; debottlenecking' },
+      { item: 'Loading', value: 'Orientation matters: load by the specified method, not by random dumping' },
+      { item: 'Selection inputs', value: 'Column diameter, vapour and liquid loads, stages required, vacuum level' },
+    ],
+    materials: ['SS304', 'SS316L', 'Carbon steel', 'Duplex and other alloys on request'],
+    applications: [
+      'Vacuum distillation',
+      'Debottlenecking existing columns',
+      'Heat-sensitive product separation',
+      'Absorption and stripping at high liquid load',
+      'Fatty acid and glycerine distillation',
+      'Solvent recovery under vacuum',
+    ],
+    comparison:
+      'Against a metal pall ring the CMR gives higher capacity and lower pressure drop per stage, but it is weaker mechanically and less forgiving of poor liquid distribution. Against structured packing it is far cheaper, easier to install through a manway, and it does not lose performance when the column is slightly out of level. Where a column is capacity-limited and the product is heat-sensitive, CMR is often the cheapest debottleneck available.',
+    faqs: [
+      {
+        q: 'Can I replace pall rings with CMR in an existing column?',
+        a: 'Usually yes, and it is one of the most common revamps we quote. The capacity gain normally comes with a change in bed depth, so the hydraulics have to be rechecked. Send the existing packing size, bed height and operating data and we will do that.',
+      },
+      {
+        q: 'Why is CMR weaker than a pall ring?',
+        a: 'The wall is thinner and the shape more open, which is exactly what keeps void fraction high. In a deep bed that matters, because the bottom layer carries everything above it, so we check the load before recommending it for a tall column.',
+      },
+      {
+        q: 'Does it work in vacuum service?',
+        a: 'That is where it performs best. At low pressure the gas-phase pressure drop dominates the separation, so a packing that minimises it per stage is worth more than one with marginally higher efficiency per metre.',
+      },
+      {
+        q: 'Is loading orientation really critical?',
+        a: 'Yes. CMR is designed to nest in a preferred orientation. Loaded by the specified method the capacity advantage is real; dumped at random from a bag it is largely lost.',
+      },
+    ],
+  },
+  {
+    slug: 'super-raschig-ring',
+    name: 'Super Raschig Ring',
+    image: '/images/products/super-raschig-ring.webp',
+    title: 'Super Raschig Ring | Partitioned Ring for Higher Efficiency',
+    h1: 'Super Raschig Ring',
+    metaDescription:
+      'Super Raschig rings with internal partitions, in ceramic, metal and plastic. Higher efficiency and better liquid renewal than a plain Raschig ring at low cost.',
+    targetKeyword: 'super Raschig ring',
+    category: 'random-packing',
+    intro:
+      'A super Raschig ring is a plain Raschig ring with internal partition walls added. The change is small and the effect is not: the partitions break up the gas path, increase the effective surface per cubic metre and repeatedly renew the liquid film, which is the mechanism that limits a plain ring. It is the cheapest way to get more efficiency out of a column that is already fitted with Raschig rings.',
+    specs: [
+      { item: 'Form', value: 'Ring with one or more internal partition walls' },
+      { item: 'Material', value: 'Ceramic, carbon steel, stainless steel, PP and PVDF' },
+      { item: 'Nominal sizes', value: '25 mm, 38 mm, 50 mm, 76 mm' },
+      { item: 'Versus plain Raschig', value: 'Higher efficiency and better liquid renewal, slightly higher pressure drop' },
+      { item: 'Strength', value: 'Partitions stiffen the ring, so it carries a deeper bed than a plain ring' },
+      { item: 'Loading', value: 'Random dumped; no orientation requirement' },
+      { item: 'Selection inputs', value: 'Column diameter, loads, required efficiency, medium and temperature' },
+    ],
+    materials: ['Ceramic', 'Carbon steel', 'SS304 / SS316L', 'PP', 'PVDF'],
+    applications: [
+      'Absorption and stripping columns',
+      'Drying towers and acid towers',
+      'Scrubbers and gas washing',
+      'Heat exchange and cooling towers',
+      'Replacement of plain Raschig rings for a capacity or efficiency gain',
+    ],
+    comparison:
+      'Against a plain Raschig ring it raises efficiency per metre of bed at a small pressure drop penalty, and its partitions make it stiffer, so it can carry a deeper bed. Against a pall ring it is cheaper and simpler to make in ceramic, but the pall ring still wins on capacity because its wall is open rather than solid.',
+    faqs: [
+      {
+        q: 'Is it worth replacing plain Raschig rings with super Raschig rings?',
+        a: 'If the column is efficiency-limited rather than capacity-limited, often yes, and it is the cheapest upgrade available because the bed geometry barely changes. We will check the pressure drop penalty against your blower margin before recommending it.',
+      },
+      {
+        q: 'Which materials are available?',
+        a: 'Ceramic for acid and high temperature duty, carbon and stainless steel where mechanical strength matters, and PP or PVDF for milder chemical service at lower cost.',
+      },
+      {
+        q: 'How does it compare with a pall ring?',
+        a: 'The pall ring has an open wall, so gas passes through the ring and capacity is higher. The super Raschig keeps a solid wall and gains its efficiency from internal partitions instead, which makes it cheaper to produce in ceramic and more robust in dirty service.',
+      },
+      {
+        q: 'Can it be used in an existing ceramic tower?',
+        a: 'Yes. Same nominal sizes, same loading method, same support design. In most cases the bed can be re-loaded size for size with no mechanical changes.',
+      },
+    ],
+  },
+  {
+    slug: 'metal-random-packing',
+    name: 'Metal Random Packing Shapes',
+    image: '/images/products/metal-random-packing.webp',
+    title: 'Metal Random Packing | Tellerette, Nutter, VSP, Dixon and Cannon Rings',
+    h1: 'Metal Random Packing Shapes',
+    metaDescription:
+      'Metal random packing beyond pall rings: Tellerette, Nutter, VSP, Dixon, Cannon and triangle spiral rings in stainless and carbon steel for revamps and special duties.',
+    targetKeyword: 'metal random packing',
+    category: 'random-packing',
+    intro:
+      'Pall rings, Raschig rings and cascade mini rings cover most metal random packing duty, but not all of it. The rest of the family exists because each shape solves a specific limitation: fouling, liquid hold-up, pressure drop in a very tall bed, or the height of a laboratory column where a few centimetres of packing has to do the work of a metre. This page is the map of those shapes, so you can tell us which constraint you are fighting rather than which name you have heard.',
+    specs: [
+      { item: 'Tellerette type', value: 'Open spiral form with high voidage; wins where fouling and liquid hold-up matter more than efficiency' },
+      { item: 'Nutter type', value: 'Ring with slotted wall and internal tongues; high capacity for refinery and gas treating columns' },
+      { item: 'VSP type', value: 'Ring with vertical slotted walls; low pressure drop at high liquid load' },
+      { item: 'Dixon type', value: 'Fine gauze ring for small diameter and laboratory columns; very high efficiency per metre' },
+      { item: 'Cannon type', value: 'Ring with internal baffle for pilot and laboratory distillation' },
+      { item: 'Triangle spiral type', value: 'Wire spiral form for laboratory rectification where bed height is the limit' },
+      { item: 'Standard shapes', value: 'Pall ring, Raschig ring, cascade mini ring and IMTP-type saddle are covered on their own pages' },
+    ],
+    materials: ['SS304', 'SS316L', 'Carbon steel', 'Copper', 'Other alloys on request'],
+    applications: [
+      'Revamps of refinery and petrochemical columns',
+      'Gas treating and amine units',
+      'Scrubbers where fouling is a risk',
+      'Pilot plant and laboratory distillation',
+      'Columns where pressure drop or bed height is the binding constraint',
+    ],
+    comparison:
+      'Choice among these shapes is driven by what limits the column, not by which is newest. If the limit is pressure drop, a VSP or Tellerette type opens the bed up. If it is capacity in a refinery column, a Nutter type is designed for exactly that. If it is height in a small column, a Dixon or triangle spiral ring packs high efficiency into a short bed. And if nothing is limiting, a pall ring or CMR is cheaper and easier to source. Tell us the constraint and we will point at the shape rather than the other way round.',
+    faqs: [
+      {
+        q: 'Do you supply these shapes or only the standard ones?',
+        a: 'We supply them to order, in the alloy your medium requires. Because these are lower-volume shapes, lead time is normally longer than for pall rings, and we will confirm it against the drawing before you commit.',
+      },
+      {
+        q: 'Can these be mixed with pall rings in one bed?',
+        a: 'Not normally. Mixing shapes in a single bed usually gives worse performance than either alone, because the two stack differently and create uneven voidage. Layered beds are used deliberately, for example a coarse layer at the bottom to filter and distribute, but that is a designed arrangement, not a random mix.',
+      },
+      {
+        q: 'What data do you need to recommend a shape?',
+        a: 'Column diameter, vapour and liquid loads, operating pressure and temperature, required separation, and the constraint you are trying to fix. With those we can compare two or three shapes on capacity and pressure drop instead of guessing.',
+      },
+      {
+        q: 'Are laboratory-size quantities available?',
+        a: 'Yes. Dixon, Cannon and spiral forms are usually bought in kilogram quantities for pilot columns, and we supply them on the same basis as production orders.',
+      },
+    ],
+  },
+  {
+    slug: 'plastic-random-packing',
+    name: 'Plastic Random Packing Shapes',
+    image: '/images/products/plastic-random-packing.webp',
+    title: 'Plastic Random Packing | Hiflow, Lanpack, Q-Pack, Snowflake Rings',
+    h1: 'Plastic Random Packing Shapes',
+    metaDescription:
+      'Plastic random packing in PP, PVDF and PTFE: Hiflow, Lanpack, Q-Pack, Snowflake, Beta, Pentagon, conjugated and flat rings for scrubbers and cooling towers.',
+    targetKeyword: 'plastic random packing',
+    category: 'random-packing',
+    intro:
+      'Plastic random packing covers the widest range of shapes in the catalogue, and the reason is economic: a shape can be moulded cheaply, so suppliers have spent decades inventing geometries that shift the balance between surface area, pressure drop and fouling resistance by a few percent each time. Understanding which lever each shape pulls is more useful than memorising names.',
+    specs: [
+      { item: 'Hiflow type', value: 'Open lattice ring; low pressure drop for high gas flow scrubbing duty' },
+      { item: 'Lanpack type', value: 'Cylindrical lattice with high voidage; used in absorption and cooling towers' },
+      { item: 'Q-Pack type', value: 'Ring with internal structure aimed at efficiency at moderate pressure drop' },
+      { item: 'Snowflake type', value: 'Multi-lobed open shape; large surface with low bulk density for scrubbers' },
+      { item: 'Beta and pentagon types', value: 'Ring variants with internal partitions for higher efficiency in a shallow bed' },
+      { item: 'Conjugated and flat rings', value: 'Simple, cheap shapes for coarse duty and as support or hold-down layers' },
+      { item: 'Hollow ball and igel types', value: 'Very open spheres for degassing, oil-water separation and cooling tower duty' },
+      { item: 'Materials', value: 'PP standard; PVDF for higher temperature and oxidising media; PTFE where nothing else survives' },
+    ],
+    materials: ['PP', 'PVDF', 'PTFE', 'HDPE on request'],
+    applications: [
+      'Flue gas and odour scrubbers',
+      'Cooling towers and gas washing',
+      'Absorption and stripping of acid gases',
+      'Oil-water separation and degassing',
+      'Biological and chemical effluent treatment',
+      'Degreasing and fume hood packing',
+    ],
+    comparison:
+      'More open shapes such as Hiflow, snowflake and hollow balls trade surface area for pressure drop and fouling resistance, so they suit high-flow, dirty duty where a fine ring would blind. Compact shapes with internal structure trade the other way and suit absorption columns where efficiency per metre is what costs money. The material question sits above all of this: PP covers most neutral and mildly acidic duty up to moderate temperature, PVDF takes hotter and more oxidising streams, and PTFE is for the cases where even PVDF fails.',
+    faqs: [
+      {
+        q: 'Which plastic shape should I start with?',
+        a: 'For a scrubber with high gas flow and fouling risk, start with an open shape such as a Hiflow or snowflake type. For an absorption column where you are paying for height, start with a structured or internally partitioned ring. We will compare two options on pressure drop and efficiency for your duty.',
+      },
+      {
+        q: 'PP or PVDF?',
+        a: 'PP is cheaper and adequate for most scrubbing duty. PVDF is specified where temperature is higher or the stream is oxidising enough to embrittle PP. Above the practical limit of PVDF, PTFE is the remaining option.',
+      },
+      {
+        q: 'Do these shapes have the same nominal sizes?',
+        a: 'Roughly, but not identically, and the naming is not standardised across suppliers. Send us the shape name and the duty data rather than the size alone, and we will confirm what we are actually supplying.',
+      },
+      {
+        q: 'Can plastic packing be used in a packed tower with high temperature gas?',
+        a: 'Only within the material limit. Above it, PP softens and loses its shape, which collapses the bed and destroys performance. Where the inlet is hot, the design usually needs a pre-quench or a ceramic layer at the bottom.',
+      },
+    ],
+  },
 ];

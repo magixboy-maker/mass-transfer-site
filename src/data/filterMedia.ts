@@ -91,4 +91,54 @@ export const FILTER_MEDIA: Product[] = [
       },
     ],
   },
+  {
+    slug: 'mbbr-biofilter-media',
+    name: 'MBBR Biofilter Media',
+    image: '/images/products/mbbr-biofilter-media.webp',
+    title: 'MBBR Biofilter Media | Moving Bed Biofilm Carriers for Wastewater',
+    h1: 'MBBR Biofilter Media',
+    metaDescription:
+      'HDPE moving bed biofilm reactor media for municipal and industrial wastewater. High protected surface area, self-cleaning under aeration, long service life.',
+    targetKeyword: 'MBBR biofilter media',
+    category: 'filter-media',
+    intro:
+      'MBBR media are small plastic carriers that move freely in an aerated tank while a biofilm grows on their protected internal surfaces. Because the carriers collide and scrub against each other, the biofilm stays at an active thickness instead of growing into a clogged mass, which is the failure mode that limits every fixed-film process. The result is a compact reactor with no backwashing and no blocking.',
+    specs: [
+      { item: 'Form', value: 'Small cylindrical or ring carriers with internal fins and cross walls' },
+      { item: 'Material', value: 'HDPE, virgin and UV-stabilised' },
+      { item: 'Density', value: 'Close to water, so the bed fluidises at modest aeration intensity' },
+      { item: 'Surface', value: 'Protected internal area far higher than the outside profile suggests' },
+      { item: 'Filling ratio', value: 'Set by the organic and ammonia load, not by a fixed rule' },
+      { item: 'Selection inputs', value: 'Influent COD and ammonia load, target effluent, tank volume, aeration capacity' },
+    ],
+    materials: ['HDPE', 'HDPE with UV stabiliser'],
+    applications: [
+      'Municipal wastewater upgrading',
+      'Industrial effluent with high COD or ammonia',
+      'Nitrification and denitrification',
+      'Retrofit of overloaded activated sludge plants',
+      'Aquaculture and fish farming water treatment',
+      'Landfill leachate treatment',
+    ],
+    comparison:
+      'Against activated sludge, MBBR needs less tank volume for the same load and does not depend on sludge settleability, which is what makes it attractive for upgrading an overloaded plant. Against fixed media or trickling filters it does not block and never needs backwashing. Against ceramsite or sand biofilters it uses less space, but it needs a downstream solids separation step because biofilm sloughs off continuously.',
+    faqs: [
+      {
+        q: 'What filling ratio should I use?',
+        a: 'It follows the load, not a rule of thumb: the more COD or ammonia to be removed, the more protected surface is needed. Send the load and the tank volume and we will size the fill, because over-filling wastes aeration energy and abrades the media.',
+      },
+      {
+        q: 'Why HDPE rather than PP or PVC?',
+        a: 'Density. HDPE can be made to sit close to water so the bed mixes at low aeration intensity, and it stays tough and dimensionally stable for years in a wet, abrasive environment.',
+      },
+      {
+        q: 'Does the biofilm clog the media?',
+        a: 'No, that is the point of a moving bed. Continuous collision keeps the biofilm thin and active, and excess biomass sloughs off into the water, which is why a solids separation stage follows the reactor.',
+      },
+      {
+        q: 'How is it different from ceramsite biofilter media?',
+        a: 'Ceramsite is a fixed granular bed that traps solids and needs backwashing. MBBR media stay in suspension and never need backwashing. Ceramsite suits polishing and BAF duty; MBBR suits high-load biological treatment in a compact tank.',
+      },
+    ],
+  },
 ];

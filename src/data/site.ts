@@ -39,6 +39,7 @@ export const NAV = [
       { label: 'Ceramic Balls', href: '/ceramic-balls/' },
       { label: 'Adsorbents & Desiccants', href: '/adsorbents/' },
       { label: 'Filter Media', href: '/filter-media/' },
+      { label: 'Honeycomb Ceramics', href: '/honeycomb-ceramics/' },
     ],
   },
   { label: 'Applications', href: '/applications/' },

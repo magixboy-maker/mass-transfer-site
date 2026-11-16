@@ -237,4 +237,152 @@ export const ADSORBENTS: Product[] = [
       },
     ],
   },
+  {
+    slug: 'carbon-molecular-sieve',
+    name: 'Carbon Molecular Sieve (CMS)',
+    image: '/images/products/carbon-molecular-sieve.webp',
+    title: 'Carbon Molecular Sieve (CMS) | PSA Nitrogen Generation Media',
+    h1: 'Carbon Molecular Sieve (CMS)',
+    metaDescription:
+      'Carbon molecular sieve for PSA nitrogen generators. Kinetic separation of oxygen from nitrogen, high hardness and long cycle life for on-site nitrogen production.',
+    targetKeyword: 'carbon molecular sieve',
+    category: 'adsorbents',
+    intro:
+      'A carbon molecular sieve does not separate oxygen and nitrogen by size in the way a zeolite does. It separates them by speed: oxygen diffuses into the carbon pores much faster than nitrogen, so a short adsorption cycle takes the oxygen out and leaves a nitrogen-rich gas behind. That kinetic mechanism is why CMS, and not a zeolite, is the standard media for PSA nitrogen generators.',
+    specs: [
+      { item: 'Form', value: 'Black spherical or pelletised carbon' },
+      { item: 'Function', value: 'Kinetic separation of oxygen from nitrogen in PSA cycles' },
+      { item: 'Regeneration', value: 'Pressure swing only; no heat required' },
+      { item: 'Feed treatment', value: 'Air must be dried and oil-free ahead of the bed' },
+      { item: 'Purity and recovery', value: 'Trade against each other, and both are set by cycle design' },
+      { item: 'Selection inputs', value: 'Required nitrogen purity, flow rate, operating pressure, cycle time' },
+    ],
+    materials: ['Carbon molecular sieve, spherical', 'Carbon molecular sieve, pelletised'],
+    applications: [
+      'PSA nitrogen generators',
+      'On-site nitrogen for food packaging',
+      'Laser cutting and heat treating atmospheres',
+      'Chemical blanketing and inerting',
+      'Pharmaceutical and electronics nitrogen supply',
+    ],
+    comparison:
+      'Against zeolite 5A or 13X, carbon sieve gives nitrogen rather than oxygen: zeolites hold nitrogen preferentially and are used to produce oxygen, while carbon takes up oxygen faster and is used for nitrogen. Against membrane separation, PSA with CMS reaches higher purity at modest scale, while membranes win where moderate purity and large flow are acceptable and simplicity matters more than recovery.',
+    faqs: [
+      {
+        q: 'Why carbon and not zeolite for nitrogen?',
+        a: 'Because the mechanism is different. A zeolite holds nitrogen more strongly than oxygen, so the product is oxygen. Carbon molecular sieve takes up oxygen faster than nitrogen, so the product is nitrogen. Running a nitrogen generator on zeolite performs poorly by comparison.',
+      },
+      {
+        q: 'What purity can be reached?',
+        a: 'Standard PSA plants reach high purity routinely, but every step up costs recovery, and therefore feed air and power. Tell us the purity the process actually needs rather than the highest figure quoted elsewhere, and the plant will be smaller and cheaper.',
+      },
+      {
+        q: 'Why does the feed air have to be dried?',
+        a: 'Water is adsorbed strongly and blocks the pores, and compressor oil carries over with it. A dryer and coalescing filter ahead of the CMS bed is not optional; it is what decides how long the bed lasts.',
+      },
+      {
+        q: 'How long does a CMS bed last?',
+        a: 'Several years in normal service. What shortens it is contamination and mechanical attrition rather than the carbon itself, which is why pre-treatment and a proper fill procedure matter more than the grade chosen.',
+      },
+    ],
+  },
+  {
+    slug: 'molecular-sieve-13x-hp',
+    name: '13X HP Molecular Sieve',
+    image: '/images/products/molecular-sieve-13x-hp.webp',
+    title: '13X HP Molecular Sieve | PSA Oxygen and Air Prepurification',
+    h1: '13X HP Molecular Sieve',
+    metaDescription:
+      'High performance 13X molecular sieve beads for PSA and VPSA oxygen plants, medical oxygen concentrators and air prepurification. High capacity, low attrition.',
+    targetKeyword: '13X HP molecular sieve',
+    category: 'adsorbents',
+    intro:
+      'The HP grade of 13X has the same faujasite structure as standard 13X, made to a tighter specification: higher capacity, better crush strength and lower attrition in a bed that cycles every few seconds. It is specified where the cycle is fast and the bed has to last, which means PSA and VPSA oxygen, medical concentrators, and the prepurifier that protects a cryogenic air separation unit.',
+    specs: [
+      { item: 'Form', value: 'Spherical beads' },
+      { item: 'Structure', value: 'Type X faujasite, sodium form' },
+      { item: 'Function', value: 'Water, CO2 and hydrocarbon removal; nitrogen adsorption in oxygen production' },
+      { item: 'Strength', value: 'Higher crush strength and lower attrition than standard 13X' },
+      { item: 'Cycle', value: 'Built for short-cycle PSA and VPSA duty' },
+      { item: 'Selection inputs', value: 'Flow rate, pressure, cycle time, target water and CO2 outlet, purity required' },
+    ],
+    materials: ['13X HP beads'],
+    applications: [
+      'PSA and VPSA oxygen plants',
+      'Medical oxygen concentrators',
+      'Air prepurification ahead of cryogenic separation',
+      'CO2 and water removal from air and natural gas',
+      'Hydrocarbon guard beds',
+    ],
+    comparison:
+      'Against standard 13X, the HP grade costs more and earns it back in bed life and stable capacity under fast cycling. Against lithium-exchanged sieve, 13X HP is cheaper and more tolerant of moisture excursions, while LiX holds more nitrogen capacity and therefore shrinks the bed in large oxygen plants. Which of the two is right depends on plant size and on how well the feed is pre-treated.',
+    faqs: [
+      {
+        q: '13X HP or LiX for an oxygen plant?',
+        a: 'For a large VPSA plant with good pre-treatment, LiX packs more nitrogen capacity per cubic metre and reduces bed size. For smaller plants, medical concentrators, or feeds where moisture excursions are possible, 13X HP is the more forgiving and more economical choice.',
+      },
+      {
+        q: 'How is it different from standard 13X?',
+        a: 'Same crystal, tighter specification: higher capacity, better crush strength, lower attrition. In a slow thermal swing dryer the difference is small. In a fast PSA cycle it decides whether the bed holds its capacity or slowly turns into dust.',
+      },
+      {
+        q: 'What has to be removed before the sieve bed?',
+        a: 'Water and oil aerosol. The sieve will take water, but every kilogram of water it takes is capacity not available for the real duty, and liquid water damages the beads. A dryer and coalescer upstream pay for themselves.',
+      },
+      {
+        q: 'Beads or pellets?',
+        a: 'Beads for PSA and VPSA, for better flow distribution and lower pressure drop. Pellets appear in some gas drying duties where surface-to-volume ratio matters more than pressure drop.',
+      },
+    ],
+  },
+  {
+    slug: 'potassium-permanganate-activated-alumina',
+    name: 'Potassium Permanganate on Alumina',
+    image: '/images/products/potassium-permanganate-activated-alumina.webp',
+    title: 'Potassium Permanganate Impregnated Alumina | H2S and Odour Removal',
+    h1: 'Potassium Permanganate Impregnated Activated Alumina',
+    metaDescription:
+      'Potassium permanganate on activated alumina for H2S, mercaptan and odour removal from gas and air. Oxidative media with high removal efficiency, non-regenerable.',
+    targetKeyword: 'potassium permanganate activated alumina',
+    category: 'adsorbents',
+    intro:
+      'Plain activated alumina adsorbs; potassium permanganate on alumina oxidises. The difference matters when the contaminant is hydrogen sulphide, a mercaptan or an odour compound, because oxidation converts it into a sulphate that stays in the bed instead of coming back off on the next cycle. It is a consumable rather than a regenerable adsorbent, and it is specified for exactly that reason: it removes the last traces instead of cycling them.',
+    specs: [
+      { item: 'Form', value: 'Spherical beads with permanganate impregnation' },
+      { item: 'Base', value: 'Activated alumina' },
+      { item: 'Function', value: 'Oxidative removal of H2S, mercaptans, odours and some nitrogen oxides' },
+      { item: 'Regeneration', value: 'Not regenerable; the media is consumed and replaced' },
+      { item: 'Bed life', value: 'Set by the total mass of contaminant to be removed, not by cycle time' },
+      { item: 'Humidity', value: 'Oxidation needs a humid surface; very dry or condensing gas both hurt performance' },
+      { item: 'Selection inputs', value: 'Contaminant type and concentration, flow, humidity, required outlet level' },
+    ],
+    materials: ['Potassium permanganate on activated alumina'],
+    applications: [
+      'Sour gas polishing downstream of amine units',
+      'Odour control for air and ventilation streams',
+      'Sewage and wastewater off-gas treatment',
+      'Hydrogen sulphide removal in biogas and landfill gas',
+      'Guard beds ahead of molecular sieve or catalyst',
+    ],
+    comparison:
+      'Against plain activated alumina, the impregnated grade removes H2S and mercaptans that plain alumina only partly holds and then releases. Against a zinc oxide guard bed it works at ambient temperature and at lower cost for trace duty, while zinc oxide is the better answer for bulk sulphur removal at high concentration. Against activated carbon it avoids the fire risk that spent carbon carries when loaded with sulphur compounds.',
+    faqs: [
+      {
+        q: 'Can it be regenerated?',
+        a: 'No. The permanganate is consumed as it oxidises the contaminant, and the bed is replaced at breakthrough. That is normal for an oxidative medium, and it is why the bed is sized on total contaminant load rather than on cycle time.',
+      },
+      {
+        q: 'What happens to the spent media?',
+        a: 'It contains manganese compounds and sulphate, so it is handled as chemical waste under local rules. We can tell you what the spent bed will contain, but disposal is governed by where you operate.',
+      },
+      {
+        q: 'Why does humidity matter so much?',
+        a: 'The oxidation needs a humid surface to proceed. Very dry gas gives poor performance, and condensing water blinds the bed. There is a workable humidity window, and it should be checked before the bed is designed.',
+      },
+      {
+        q: 'Is it suitable for biogas?',
+        a: 'Yes, for polishing after bulk desulphurisation. Biogas carries water and trace compounds, so the bed normally sits after drying, and its life is set by the residual H2S loading it sees.',
+      },
+    ],
+  },
 ];

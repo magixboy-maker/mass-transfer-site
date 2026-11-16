@@ -228,4 +228,54 @@ export const CERAMIC_BALLS: Product[] = [
       },
     ],
   },
+  {
+    slug: 'zirconia-grinding-beads',
+    name: 'Zirconia Grinding Beads',
+    image: '/images/products/zirconia-grinding-beads.webp',
+    title: 'Zirconia Grinding Beads | Yttria-Stabilised Media for Ultra-Fine Milling',
+    h1: 'Zirconia Grinding Beads',
+    metaDescription:
+      'Yttria-stabilised zirconia grinding beads for ultra-fine and nano milling. High density, low wear and minimal contamination for ceramics, pigments and battery materials.',
+    targetKeyword: 'zirconia grinding beads',
+    category: 'ceramic-balls',
+    intro:
+      'When a mill has to reach sub-micron particle size, the limiting factor stops being the mill and starts being the media. Zirconia beads combine high density with high hardness and low wear, so they deliver more energy per impact and put less of themselves into the product. In electronic ceramics, battery materials, pigments and pharmaceutical suspensions that last point is often the reason they are specified rather than chosen on price.',
+    specs: [
+      { item: 'Form', value: 'Spherical beads, yttria-stabilised zirconia' },
+      { item: 'Density', value: 'About 6 g/cm3, roughly twice that of zirconia silicate beads' },
+      { item: 'Wear', value: 'Very low, so contamination contributed to the product is minimal' },
+      { item: 'Sizes', value: 'From sub-millimetre up to several millimetres, selected against mill type and target fineness' },
+      { item: 'Mills', value: 'Bead mills, attritors, basket mills and horizontal mills' },
+      { item: 'Selection inputs', value: 'Target particle size, slurry viscosity, mill type, allowable contamination' },
+    ],
+    materials: ['Yttria-stabilised zirconia (YTZP)'],
+    applications: [
+      'Ultra-fine and nano grinding',
+      'Electronic ceramics and dielectric materials',
+      'Battery cathode and anode materials',
+      'Pigments and inks',
+      'Pharmaceutical suspensions',
+      'Magnetic and technical ceramics',
+    ],
+    comparison:
+      'Against alumina beads, zirconia is denser and tougher: it grinds faster and wears far less, and the difference shows up in contamination levels as much as in milling time. Against zirconia silicate beads it is harder and denser again, which matters once the target goes below a micron. Against steel media it removes iron contamination entirely, which is usually the deciding argument in electronic and battery materials.',
+    faqs: [
+      {
+        q: 'Why not just use alumina beads?',
+        a: 'Alumina is cheaper, but it is less dense and wears faster, so it puts alumina into the product and takes longer to reach the target size. Below about a micron the wear difference normally outweighs the price difference.',
+      },
+      {
+        q: 'How do I choose the bead size?',
+        a: 'Smaller beads give more contact points and finer grinding but carry less energy per impact; larger beads break down coarse feed faster. Most mills run a mixed charge, and the right split depends on feed size and target, so send us both.',
+      },
+      {
+        q: 'Will the beads contaminate the product?',
+        a: 'Zirconia wear is very low but not zero. Where the specification limits zirconium, tell us and we will advise on grade and on the wear rate to expect; yttria-stabilised grades are the lowest-wear option.',
+      },
+      {
+        q: 'Do they work in a horizontal bead mill?',
+        a: 'Yes, that is the most common application. Bead density matters most in horizontal mills because it sets how much energy reaches the slurry, which is why zirconia is preferred over glass or lower-density ceramic media there.',
+      },
+    ],
+  },
 ];
