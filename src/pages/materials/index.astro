@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { MATERIALS } from '../../data/materials';
+import Cta from '../../components/Cta.astro';
+---
+
+<Layout
+  title="Packing Materials Guide | PP, PVDF, PTFE, Stainless, Ceramic"
+  description="Material selection guide for tower packing: PP, PVDF, PTFE, SS304/316L, duplex, ceramic and carbon. Temperature and corrosion comparison."
+  canonical="https://www.mass-transfer.com/materials/"
+  breadcrumb={[{ label: 'Materials' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Materials Guide</h1>
+    <p class="page-sub">
+      Material choice is usually the first and most important packing decision. This table summarises temperature limits, density and corrosion behaviour to help you shortlist. We confirm the final material against your exact medium and temperature.
+    </p>
+
+    <article class="prose">
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Max Temp</th>
+            <th>Density</th>
+            <th>Corrosion</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          {MATERIALS.map((m) => (
+            <tr>
+              <td><strong>{m.name}</strong><br/><span style="color:var(--text-muted);font-size:13px;">{m.fullName}</span></td>
+              <td>{m.maxTemp}</td>
+              <td>{m.density}</td>
+              <td>{m.corrosion}</td>
+              <td>{m.bestFor}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>What to Avoid</h2>
+      <ul>
+        {MATERIALS.map((m) => (
+          <li><strong>{m.name}:</strong> {m.avoid}</li>
+        ))}
+      </ul>
+    </article>
+
+    <Cta heading="Not sure which material survives your medium?" />
+  </div>
+</Layout>

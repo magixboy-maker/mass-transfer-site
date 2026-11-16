@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+---
+
+<Layout
+  title="Quality & Test Reports | ISO 9001-Certified Production"
+  description="Our quality system and test reports for tower packing and internals: dimensional, mechanical, material and chemical resistance testing. ISO 9001-certified production."
+  canonical="https://www.mass-transfer.com/quality/"
+  breadcrumb={[{ label: 'Quality & Tests' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Quality &amp; Test Reports</h1>
+    <p class="page-sub">
+      Consistent quality is the whole point of buying from a certified supplier. Here is how we verify every batch before it ships.
+    </p>
+
+    <article class="prose">
+      <h2>Quality System</h2>
+      <p>
+        Production runs under an <strong>ISO 9001-certified</strong> quality management system, covering incoming material, in-process control and final inspection.
+      </p>
+
+      <h2>What We Test</h2>
+      <ul>
+        <li><strong>Dimensions</strong> — nominal size, wall thickness and geometry against specification.</li>
+        <li><strong>Mechanical strength</strong> — crush and load tests to confirm the bed will carry its design load.</li>
+        <li><strong>Material composition</strong> — alloy and polymer verification to confirm you receive the grade you ordered.</li>
+        <li><strong>Chemical resistance</strong> — acid/alkali resistance testing for ceramic and plastic grades where relevant.</li>
+        <li><strong>Surface quality</strong> — visual inspection for burrs, cracks and defects.</li>
+      </ul>
+
+      <h2>Documentation You Receive</h2>
+      <ul>
+        <li>Inspection report per batch</li>
+        <li>Material certificate where applicable</li>
+        <li>Packing and loading photos</li>
+        <li>Shipment documents and marks</li>
+      </ul>
+
+      <p>
+        Need a specific test or certificate for your project? Tell us the standard — we confirm what we can supply before you commit.
+      </p>
+    </article>
+
+    <Cta heading="Request sample inspection reports" />
+  </div>
+</Layout>

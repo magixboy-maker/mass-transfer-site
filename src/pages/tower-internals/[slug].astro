@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import { INTERNALS } from '../../data/internals';
+
+export function getStaticPaths() {
+  return INTERNALS.map((p) => ({ params: { slug: p.slug }, props: { item: p } }));
+}
+
+const { item } = Astro.props;
+const others = INTERNALS.filter((i) => i.slug !== item.slug).slice(0, 4);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: item.name,
+  description: item.metaDescription,
+  brand: { '@type': 'Brand', name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.' },
+  category: 'Tower Internals',
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: item.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={item.title}
+  description={item.metaDescription}
+  canonical={`https://www.mass-transfer.com/tower-internals/${item.slug}/`}
+  schema={[schema, faqSchema]}
+  breadcrumb={[
+    { label: 'Tower Internals', href: '/tower-internals/' },
+    { label: item.name },
+  ]}
+>
+  <div class="wrap">
+    <h1 class="page-title">{item.h1}</h1>
+    <p class="page-sub">{item.intro}</p>
+
+    <article class="prose">
+      <h2>Types & Configurations</h2>
+      <div class="grid" style="margin-bottom:8px;">
+        {item.types.map((t) => (
+          <div class="card">
+            <h3>{t.name}</h3>
+            <p>{t.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <h2>Specifications</h2>
+      <table>
+        <thead>
+          <tr><th>Parameter</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          {item.specs.map((s) => (
+            <tr><td>{s.item}</td><td>{s.value}</td></tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Available Materials</h2>
+      <p>{item.materials.join(' · ')}</p>
+
+      <h2>Typical Applications</h2>
+      <ul>
+        {item.applications.map((a) => <li>{a}</li>)}
+      </ul>
+
+      <h2>Selection & Design Notes</h2>
+      <ul>
+        {item.designNotes.map((n) => <li>{n}</li>)}
+      </ul>
+
+      <h2>How the Options Compare</h2>
+      <p>{item.comparison}</p>
+    </article>
+
+    <Faq faqs={item.faqs} />
+
+    <section style="margin-top:36px;">
+      <h2>Other Tower Internals</h2>
+      <div class="grid">
+        {others.map((o) => (
+          <div class="card">
+            <h3><a href={`/tower-internals/${o.slug}/`}>{o.name}</a></h3>
+            <p>{o.metaDescription.slice(0, 110)}…</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <Cta heading={`Talk to us about ${item.name.toLowerCase()}`} />
+  </div>
+</Layout>

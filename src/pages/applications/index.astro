@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { APPLICATIONS } from '../../data/applications';
+import Cta from '../../components/Cta.astro';
+---
+
+<Layout
+  title="Applications | Packing for FGD, CO₂ Capture, Biogas & More"
+  description="Packing and internals for specific applications: flue gas desulfurization, CO₂ capture, biogas upgrading, amine sweetening, ammonia stripping and more."
+  canonical="https://www.mass-transfer.com/applications/"
+  breadcrumb={[{ label: 'Applications' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Applications</h1>
+    <p class="page-sub">
+      The right packing depends on the medium, temperature and duty. These application guides walk through the selection logic for common processes — the failure modes to avoid and the products we recommend.
+    </p>
+
+    <div class="grid">
+      {APPLICATIONS.map((a) => (
+        <div class="card">
+          <h3><a href={`/applications/${a.slug}/`}>{a.h1}</a></h3>
+          <p>{a.metaDescription.slice(0, 110)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <Cta heading="Don't see your process? Ask us." />
+  </div>
+</Layout>

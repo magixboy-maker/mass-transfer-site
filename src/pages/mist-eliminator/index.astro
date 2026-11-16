@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PRODUCTS } from '../../data/products';
+import Cta from '../../components/Cta.astro';
+
+const items = PRODUCTS.filter((p) => p.category === 'mist-eliminator');
+---
+
+<Layout
+  title="Mist Eliminator & Demister Pad Manufacturer"
+  description="Factory-direct mist eliminators and demister pads: wire mesh pads, vane and blade separators for removing entrained liquid from gas streams."
+  canonical="https://www.mass-transfer.com/mist-eliminator/"
+  breadcrumb={[{ label: 'Mist Eliminators' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Mist Eliminators</h1>
+    <p class="page-sub">
+      Mist eliminators (demisters) remove entrained liquid droplets from gas streams, protecting downstream equipment and cutting product loss. We supply wire mesh pads for fine, clean streams and vane or blade separators for high velocity, high liquid load or fouling service.
+    </p>
+
+    <div class="grid">
+      {items.map((p) => (
+        <div class="card">
+          <h3><a href={`/mist-eliminator/${p.slug}/`}>{p.name}</a></h3>
+          <p>{p.metaDescription.slice(0, 110)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <Cta heading="Need help choosing a mist eliminator?" />
+  </div>
+</Layout>

@@ -1,0 +1,54 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { SITE } from '../../data/site';
+import Cta from '../../components/Cta.astro';
+---
+
+<Layout
+  title="About Us | Factory-Direct Mass Transfer Equipment from China"
+  description="Pingxiang Xinquan Chemical Packing Co., Ltd. supplies tower packing and internals factory-direct. ISO 9001-certified production, based in the Pingxiang chemical packing industrial base."
+  canonical="https://www.mass-transfer.com/about/"
+  breadcrumb={[{ label: 'About' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">About Us</h1>
+    <p class="page-sub">
+      We supply mass transfer equipment factory-direct — one margin layer, not two.
+    </p>
+
+    <article class="prose">
+      <h2>Who We Are</h2>
+      <p>
+        {SITE.legalName} is a factory-direct supply partner for random and structured packing, mist eliminators and tower internals. We are based in Pingxiang, Jiangxi — China's largest chemical packing and ceramic industrial base, where material supply, tooling and skilled labour are concentrated.
+      </p>
+      <p>
+        Because we operate from within this industrial base, we can supply high-quality packing at factory-direct pricing, with fast engineering feedback on material selection, sizing and lead time.
+      </p>
+
+      <h2>Quality You Can Verify</h2>
+      <p>
+        Our production is <strong>ISO 9001-certified</strong>. Every batch can be accompanied by inspection and test reports covering dimensions, mechanical strength, material composition and (where relevant) chemical resistance. We do not ask you to trust a marketing claim — we show you the evidence.
+      </p>
+      <ul>
+        <li>Dimensional inspection against specification</li>
+        <li>Mechanical strength and crush testing</li>
+        <li>Material composition verification</li>
+        <li>Packing, loading and shipment photo records</li>
+      </ul>
+
+      <h2>How We Work</h2>
+      <ul>
+        <li><strong>Selection first</strong> — we help you choose the right packing and material for your medium and temperature before you buy.</li>
+        <li><strong>Transparent lead times</strong> — delivery schedule confirmed in writing before you place an order.</li>
+        <li><strong>Direct communication</strong> — you talk to an engineer and a sales manager, not a call centre.</li>
+      </ul>
+
+      <h2>The Pingxiang Advantage</h2>
+      <p>
+        Pingxiang has manufactured chemical packing and ceramic tower internals for decades. That concentration of supply means competitive material cost, mature production techniques and reliable logistics — advantages we pass on as factory-direct supply.
+      </p>
+    </article>
+
+    <Cta heading="Talk to us about your next project" />
+  </div>
+</Layout>

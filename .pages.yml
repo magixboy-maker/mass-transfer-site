@@ -1,0 +1,64 @@
+# Pages CMS 配置（https://app.pagescms.org）
+# 作用：给这个仓库套一个网页后台，在浏览器里写文章、传图片，保存即提交到 GitHub，
+#       Cloudflare Pages 检测到提交后自动重新构建并上线。
+# 注意：文件名会成为 URL（/blog/<文件名>/），所以文件名必须用英文小写 + 连字符。
+
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: blog
+    label: 技术文章（Blog）
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    view:
+      primary: title
+      sort: pubDate
+      order: desc
+    fields:
+      - name: title
+        label: 标题（英文，会显示在列表和搜索结果里）
+        type: string
+        required: true
+      - name: description
+        label: 摘要（英文，150–160 字符，搜索引擎结果显示这段）
+        type: text
+        required: true
+      - name: pubDate
+        label: 发布日期
+        type: date
+        required: true
+      - name: body
+        label: 正文
+        type: rich-text
+
+  - name: shipments
+    label: 发货与包装（Shipments）
+    type: collection
+    path: src/content/shipments
+    format: yaml-frontmatter
+    view:
+      primary: title
+      sort: pubDate
+      order: desc
+    fields:
+      - name: title
+        label: 标题（英文）
+        type: string
+        required: true
+      - name: description
+        label: 摘要（英文，150–160 字符）
+        type: text
+        required: true
+      - name: pubDate
+        label: 发布日期
+        type: date
+        required: true
+      - name: cover
+        label: 封面图（可选，建议 1200×800，webp/jpg）
+        type: image
+      - name: body
+        label: 正文与照片（照片直接在正文里插入）
+        type: rich-text

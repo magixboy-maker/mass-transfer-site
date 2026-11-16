@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PRODUCTS } from '../../data/products';
+import Cta from '../../components/Cta.astro';
+
+const items = PRODUCTS.filter((p) => p.category === 'structured-packing');
+---
+
+<Layout
+  title="Structured Packing Supplier | Wire Mesh & Corrugated Sheet"
+  description="Factory-direct structured packing: wire mesh and corrugated sheet packing for high-efficiency distillation, absorption, CO₂ capture and biogas upgrading."
+  canonical="https://www.mass-transfer.com/structured-packing/"
+  breadcrumb={[{ label: 'Structured Packing' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Structured Packing</h1>
+    <p class="page-sub">
+      Structured packing consists of stacked corrugated sheets or fine wire mesh, arranged to give high efficiency and very low pressure drop. It is the preferred choice where separation quality, low energy cost and compact column size matter most — distillation, CO₂ capture, biogas upgrading and fine chemical separation.
+    </p>
+
+    <div class="grid">
+      {items.map((p) => (
+        <div class="card">
+          <h3><a href={`/structured-packing/${p.slug}/`}>{p.name}</a></h3>
+          <p>{p.metaDescription.slice(0, 110)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <Cta heading="Need help choosing structured packing?" />
+  </div>
+</Layout>

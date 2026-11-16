@@ -1,0 +1,19 @@
+{
+  "name": "mass-transfer-com",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Mass transfer equipment, tower packing and column internals — factory-direct supply from China.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "wrangler": "^4.162.0"
+  }
+}

@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, NAV } from '../data/site';
+import { PRODUCTS } from '../data/products';
+import { APPLICATIONS } from '../data/applications';
+---
+
+<Layout
+  title="Mass Transfer Equipment Supplier | Tower Packing & Column Internals"
+  description={SITE.description}
+  canonical="https://www.mass-transfer.com/"
+>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Mass Transfer Equipment, Factory-Direct</h1>
+      <p>
+        {SITE.tagline}
+      </p>
+      <p style="margin-top:14px;color:var(--text-muted);">
+        ISO 9001-certified production partner. Random and structured packing, mist eliminators and tower internals for distillation, absorption, scrubbing and carbon capture — one margin layer, not two.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="/contact/">Request a Quote</a>
+        <a class="btn ghost" href="/applications/">Explore Applications</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section style="margin-top:40px;">
+      <h2>Packing Categories</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="/random-packing/">Random Packing</a></h3>
+          <p>Pall rings, Raschig rings, Cascade Mini Rings, saddles and Tri-Pack in metal, plastic and ceramic.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/structured-packing/">Structured Packing</a></h3>
+          <p>Wire mesh and corrugated sheet packing for high-efficiency distillation, absorption and CO₂ capture.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/mist-eliminator/">Mist Eliminators</a></h3>
+          <p>Wire mesh pads, vane and blade separators to remove entrained liquid droplets from gas streams.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/tower-internals/">Tower Internals</a></h3>
+          <p>Liquid distributors, support plates and demisters matched to your column for reliable performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:44px;">
+      <h2>Featured Products</h2>
+      <div class="grid">
+        {PRODUCTS.filter(p => ['pall-ring-metal','pall-ring-plastic','pall-ring-ceramic','wire-mesh','corrugated-sheet','wire-mesh-pad'].includes(p.slug)).map((p) => (
+          <div class="card">
+            <h3><a href={`/${p.category}/${p.slug}/`}>{p.name}</a></h3>
+            <p>{p.metaDescription.slice(0, 110)}…</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section style="margin-top:44px;">
+      <h2>Applications We Serve</h2>
+      <div class="grid">
+        {APPLICATIONS.slice(0, 8).map((a) => (
+          <div class="card">
+            <h3><a href={`/applications/${a.slug}/`}>{a.h1}</a></h3>
+            <p>{a.metaDescription.slice(0, 110)}…</p>
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:16px;"><a href="/applications/">View all applications →</a></p>
+    </section>
+
+    <section style="margin-top:44px;">
+      <h2>Why Buy Factory-Direct</h2>
+      <div class="prose">
+        <ul>
+          <li><strong>One margin layer, not two</strong> — you deal directly with the export and supply entity, without a middleman adding cost.</li>
+          <li><strong>ISO 9001-certified production</strong> — consistent quality with documented inspection and test reports.</li>
+          <li><strong>Engineering support</strong> — we help select packing and internals for your specific duty, not just sell a part number.</li>
+          <li><strong>Real evidence</strong> — inspection reports, packing and loading photos available on request.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</Layout>

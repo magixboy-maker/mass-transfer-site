@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { SITE } from '../../data/site';
+---
+
+<Layout
+  title="Contact Us | Request a Quote for Tower Packing"
+  description="Contact Jack Lee, Sales Manager, for tower packing and column internals. Email, WhatsApp and inquiry form. Factory-direct supply."
+  canonical="https://www.mass-transfer.com/contact/"
+  breadcrumb={[{ label: 'Contact' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Contact Us</h1>
+    <p class="page-sub">
+      Tell us your flow rate, medium and operating conditions, and we'll recommend the right packing and internals — factory-direct.
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;" class="contact-grid">
+      <div>
+        <h2>Reach Us Directly</h2>
+        <div class="prose">
+          <p>
+            <strong>{SITE.contact.salesName}</strong><br/>
+            {SITE.contact.salesTitle}<br/>
+            <a href={`mailto:${SITE.contact.salesEmail}`}>{SITE.contact.salesEmail}</a>
+          </p>
+          <p>
+            <strong>WhatsApp</strong><br/>
+            <a href={`https://wa.me/${SITE.contact.whatsapp.replace('+','')}`}>{SITE.contact.whatsapp}</a>
+          </p>
+          <p>
+            <strong>General inquiries</strong><br/>
+            <a href={`mailto:${SITE.contact.formEmail}`}>{SITE.contact.formEmail}</a>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Send an Inquiry</h2>
+        <form id="inquiry-form" style="display:flex;flex-direction:column;gap:12px;">
+          <input type="text" name="name" placeholder="Your name" required maxlength="120" style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:15px;" />
+          <input type="email" name="email" placeholder="Your email" required maxlength="200" style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:15px;" />
+          <input type="text" name="company" placeholder="Company (optional)" maxlength="200" style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:15px;" />
+          <textarea name="message" placeholder="Flow rate, medium, temperature, column size, quantity…" rows="5" required maxlength="5000" style="padding:10px;border:1px solid var(--border);border-radius:6px;font-size:15px;resize:vertical;"></textarea>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+          <button type="submit" id="submit-btn" class="btn" style="border:none;cursor:pointer;">Send Inquiry</button>
+          <p id="form-status" role="status" aria-live="polite" style="margin:0;font-size:14px;line-height:1.55;display:none;"></p>
+          <p style="margin:0;font-size:12px;color:var(--text-muted);">
+            Replies come from <a href={`mailto:${SITE.contact.salesEmail}`}>{SITE.contact.salesEmail}</a> within one business day. Your details are used only to answer your inquiry.
+          </p>
+        </form>
+
+        <script>
+          const form = document.getElementById('inquiry-form') as HTMLFormElement | null;
+          const btn = document.getElementById('submit-btn') as HTMLButtonElement | null;
+          const statusEl = document.getElementById('form-status');
+          const FALLBACK = 'jack.lee@pxxinquan.com';
+
+          const okHTML =
+            '<strong>&#10003; Your inquiry has been sent to Jack Lee.</strong><br/>' +
+            'He will reply from <a href="mailto:' + FALLBACK + '" style="color:inherit;text-decoration:underline;">' +
+            FALLBACK +
+            '</a> within 24 hours (Mon&ndash;Sat, Beijing time). ' +
+            'No reply to this message is needed &mdash; please do not submit the form again.';
+
+          form?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!btn || !statusEl) return;
+            const original = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            statusEl.style.display = 'none';
+            statusEl.className = '';
+
+            try {
+              const res = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
+              const data = await res.json().catch(() => ({ ok: false }));
+              if (data.ok) {
+                statusEl.innerHTML = okHTML;
+                statusEl.className = 'form-status ok';
+                form.reset();
+              } else {
+                statusEl.textContent =
+                  data.error || `Something went wrong. Please email us directly at ${FALLBACK}.`;
+                statusEl.className = 'form-status err';
+              }
+            } catch {
+              statusEl.textContent = `Network error. Please email us directly at ${FALLBACK}.`;
+              statusEl.className = 'form-status err';
+            } finally {
+              statusEl.style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = original;
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 760px) {
+      .contact-grid { grid-template-columns: 1fr !important; }
+    }
+    .form-status { padding: 12px 14px; border-radius: 6px; border: 1px solid transparent; }
+    .form-status.ok {
+      color: #14532d;
+      background: #f0fdf4;
+      border-color: #86efac;
+      font-size: 14px;
+    }
+    .form-status.err {
+      color: #7f1d1d;
+      background: #fef2f2;
+      border-color: #fca5a5;
+    }
+  </style>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PRODUCTS } from '../../data/products';
+import Cta from '../../components/Cta.astro';
+
+const items = PRODUCTS.filter((p) => p.category === 'random-packing');
+---
+
+<Layout
+  title="Random Packing Manufacturer | Pall Rings, Raschig Rings, Saddles"
+  description="Factory-direct random packing: metal, plastic and ceramic pall rings, Raschig rings, Cascade Mini Rings, saddles and Tri-Pack for distillation and absorption."
+  canonical="https://www.mass-transfer.com/random-packing/"
+  breadcrumb={[{ label: 'Random Packing' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Random Packing</h1>
+    <p class="page-sub">
+      Random (dumped) packing is poured loosely into a column, forming a bed of high surface area for gas–liquid mass transfer. It is the economical, robust choice for most distillation, absorption, stripping and scrubbing duties. We supply metal, plastic and ceramic random packing to match your medium and temperature.
+    </p>
+
+    <div class="grid">
+      {items.map((p) => (
+        <div class="card">
+          <h3><a href={`/random-packing/${p.slug}/`}>{p.name}</a></h3>
+          <p>{p.metaDescription.slice(0, 110)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <Cta heading="Need help choosing random packing?" />
+  </div>
+</Layout>

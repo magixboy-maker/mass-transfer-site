@@ -1,0 +1,136 @@
+---
+import '../styles/global.css';
+import { SITE, NAV } from '../data/site';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  schema?: object;
+  breadcrumb?: { label: string; href?: string }[];
+}
+
+const { title, description = SITE.description, ogImage = '/og.png', canonical, schema, breadcrumb } = Astro.props;
+const fullTitle = title.includes('Mass Transfer') ? title : title;
+const url = Astro.url.pathname;
+const canonicalUrl = canonical || new URL(url, SITE.url).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL(ogImage, SITE.url).toString()} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Organization schema (全站) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      ...SITE.org,
+      sameAs: ['https://www.xinquan.net.cn'],
+    })} />
+
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="/">MASS<span>·</span>TRANSFER</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+        <nav class="nav" id="nav">
+          {NAV.map((item) => (
+            <a href={item.href} class={url === item.href ? 'active' : ''}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {breadcrumb && (
+        <div class="wrap">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            {breadcrumb.map((b) => (
+              <>
+                <span class="sep">/</span>
+                {b.href ? <a href={b.href}>{b.label}</a> : <span>{b.label}</span>}
+              </>
+            ))}
+          </nav>
+        </div>
+      )}
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h4>Products</h4>
+            <ul>
+              <li><a href="/random-packing/">Random Packing</a></li>
+              <li><a href="/structured-packing/">Structured Packing</a></li>
+              <li><a href="/mist-eliminator/">Mist Eliminators</a></li>
+              <li><a href="/tower-internals/">Tower Internals</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Applications</h4>
+            <ul>
+              <li><a href="/applications/flue-gas-desulfurization/">FGD</a></li>
+              <li><a href="/applications/co2-capture/">CO₂ Capture</a></li>
+              <li><a href="/applications/biogas-upgrading/">Biogas Upgrading</a></li>
+              <li><a href="/applications/">All Applications</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/quality/">Quality &amp; Tests</a></li>
+              <li><a href="/materials/">Materials</a></li>
+              <li><a href="/blog/">Technical Blog</a></li>
+              <li><a href="/shipments/">Shipments</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>{SITE.contact.salesName} · {SITE.contact.salesTitle}</li>
+              <li><a href={`mailto:${SITE.contact.salesEmail}`}>{SITE.contact.salesEmail}</a></li>
+              <li><a href={`https://wa.me/${SITE.contact.whatsapp.replace('+', '')}`}>WhatsApp: {SITE.contact.whatsapp}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          © {new Date().getFullYear()} {SITE.legalName} · Factory-direct supply of mass transfer equipment · <a href="https://www.xinquan.net.cn" target="_blank" rel="noopener">Group export entity: xinquan.net.cn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('navToggle')?.addEventListener('click', () => {
+        document.getElementById('nav')?.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

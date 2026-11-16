@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../../content/shipments/*.md');
+  return posts.map((post) => {
+    const slug = post.file.split('/').pop()!.replace(/\.md$/, '');
+    return { params: { slug }, props: { post } };
+  });
+}
+
+const { post } = Astro.props;
+const postUrl = `/shipments/${post.file.split('/').pop()!.replace(/\.md$/, '')}/`;
+const html = post.compiledContent();
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.frontmatter.title,
+  description: post.frontmatter.description,
+  datePublished: post.frontmatter.pubDate,
+  image: post.frontmatter.cover || undefined,
+  author: { '@type': 'Organization', name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.' },
+};
+---
+
+<Layout
+  title={post.frontmatter.title}
+  description={post.frontmatter.description}
+  canonical={`https://www.mass-transfer.com${postUrl}`}
+  schema={schema}
+  breadcrumb={[{ label: 'Shipments', href: '/shipments/' }, { label: post.frontmatter.title }]}
+>
+  <div class="wrap">
+    {post.frontmatter.cover && (
+      <img
+        src={post.frontmatter.cover}
+        alt={post.frontmatter.title}
+        style="max-width:640px;width:100%;border:1px solid var(--border);border-radius:8px;margin-bottom:20px;"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+    <article class="prose" set:html={html} />
+    <p style="margin-top:28px;font-size:13px;color:var(--text-muted);">
+      <a href="/shipments/">← All packing and shipment notes</a>
+    </p>
+    <Cta heading="Ask about packing for your next order" />
+  </div>
+</Layout>

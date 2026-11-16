@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/_astro/*",
+    "/images/*",
+    "/favicon.svg",
+    "/og.svg",
+    "/robots.txt",
+    "/sitemap.xml"
+  ]
+}

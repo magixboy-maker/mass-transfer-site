@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+import { INTERNALS } from '../../data/internals';
+---
+
+<Layout
+  title="Tower Internals Supplier | Distributors, Support Plates & Demisters"
+  description="Factory-direct tower internals: liquid distributors, support plates, redistributors, demister supports and inlet baffles matched to your column for reliable performance."
+  canonical="https://www.mass-transfer.com/tower-internals/"
+  breadcrumb={[{ label: 'Tower Internals' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Tower Internals</h1>
+    <p class="page-sub">
+      Packing only performs as designed when supported by the right internals. Liquid distributors, support plates and redistributors determine how uniformly liquid and gas meet the packing — the difference between hitting spec and missing it. We supply internals matched to your column diameter and duty.
+    </p>
+
+    <div class="grid">
+      {INTERNALS.map((i) => (
+        <div class="card">
+          <h3><a href={`/tower-internals/${i.slug}/`}>{i.name}</a></h3>
+          <p>{i.metaDescription.slice(0, 112)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <article class="prose" style="margin-top:36px;">
+      <h2>Why internals decide column performance</h2>
+      <p>
+        Two columns with identical packing can differ by a wide margin in separating duty purely because of how the liquid enters and leaves each bed. A distributor that feeds one side harder than the other, a support plate that sags and lets the bed channel, or a feed nozzle blasting straight into the top bed all cost efficiency that no amount of extra packing recovers.
+      </p>
+      <p>
+        Internals are also the part of a column that is easiest to change. When a revamp falls short — added bed depth with no gain in purity, a mist eliminator passing liquid, an unexplained pressure-drop rise — the internals are usually where the answer is, and they cost far less than new packing or a new vessel.
+      </p>
+      <h2>How we work</h2>
+      <ul>
+        <li>Send the column diameter, liquid and gas rates, turndown, medium and material preference.</li>
+        <li>We come back with an internals arrangement and the questions we still need answered.</li>
+        <li>For replacements, we work from your support ring detail, nozzle dimensions and photos of what is in the vessel — no vessel modification required.</li>
+      </ul>
+      <h2>Internals and packing together</h2>
+      <p>
+        We supply <a href="/random-packing/">random packing</a>, <a href="/structured-packing/">structured packing</a> and <a href="/mist-eliminator/">mist eliminators</a> alongside these internals. Buying both from one supplier removes the fit and responsibility gap that appears when packing and internals come from different vendors.
+      </p>
+    </article>
+
+    <Cta heading="Tell us your column — we'll specify the internals" />
+  </div>
+</Layout>

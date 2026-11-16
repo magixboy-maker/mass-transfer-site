@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+
+const posts = await Astro.glob('../../content/shipments/*.md');
+const sorted = posts.sort(
+  (a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime()
+);
+---
+
+<Layout
+  title="Shipments & Packing Notes | Tower Packing Export Practice"
+  description="Packing, crating and container loading notes for tower packing shipments — how material is protected between inspection and site delivery."
+  canonical="https://www.mass-transfer.com/shipments/"
+  breadcrumb={[{ label: 'Shipments' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Shipments & Packing Notes</h1>
+    <p class="page-sub">
+      What happens between the final inspection and the container door — how tower packing is bagged, crated, protected from moisture and loaded. Written so you can check it against your own receiving requirements.
+    </p>
+
+    <div class="grid">
+      {sorted.map((post) => {
+        const slug = post.file.split('/').pop()!.replace(/\.md$/, '');
+        return (
+          <div class="card">
+            {post.frontmatter.cover && (
+              <img
+                src={post.frontmatter.cover}
+                alt={post.frontmatter.title}
+                style="width:100%;height:150px;object-fit:cover;border-radius:6px;margin-bottom:10px;"
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <h3><a href={`/shipments/${slug}/`}>{post.frontmatter.title}</a></h3>
+            <p>{post.frontmatter.description}</p>
+            <p style="margin-top:8px;font-size:13px;color:var(--text-muted);">
+              {new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+
+    <Cta heading="Need packing to suit your site?" />
+  </div>
+</Layout>

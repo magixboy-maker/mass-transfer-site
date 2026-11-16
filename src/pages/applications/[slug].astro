@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { APPLICATIONS } from '../../data/applications';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedProducts from '../../components/RelatedProducts.astro';
+
+export function getStaticPaths() {
+  return APPLICATIONS.map((a) => ({ params: { slug: a.slug }, props: { app: a } }));
+}
+
+const { app } = Astro.props;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: app.h1,
+  description: app.metaDescription,
+  author: { '@type': 'Organization', name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.' },
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: app.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={app.title}
+  description={app.metaDescription}
+  canonical={`https://www.mass-transfer.com/applications/${app.slug}/`}
+  schema={[schema, faqSchema]}
+  breadcrumb={[{ label: 'Applications', href: '/applications/' }, { label: app.h1 }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">{app.h1}</h1>
+    <p class="page-sub">{app.painPoint}</p>
+
+    <article class="prose">
+      <h2>The Operating Environment</h2>
+      <p>{app.environment}</p>
+
+      <h2>Packing Selection Logic</h2>
+      <p>{app.selectionLogic}</p>
+
+      <h2>Recommended Products</h2>
+      <table>
+        <thead><tr><th>Product</th><th>Why It Fits</th></tr></thead>
+        <tbody>
+          {app.recommended.map((r) => (<tr><td>{r.product}</td><td>{r.why}</td></tr>))}
+        </tbody>
+      </table>
+
+      <h2>Common Failure Modes &amp; How to Avoid Them</h2>
+      <ul>
+        {app.failureModes.map((f) => <li>{f}</li>)}
+      </ul>
+    </article>
+
+    <Faq faqs={app.faqs} />
+    <RelatedProducts slugs={app.relatedProducts} title="Related Packing & Internals" />
+    <Cta heading={`Get a recommendation for ${app.h1}`} />
+  </div>
+</Layout>

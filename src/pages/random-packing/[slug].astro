@@ -1,0 +1,86 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PRODUCTS } from '../../data/products';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedProducts from '../../components/RelatedProducts.astro';
+
+export function getStaticPaths() {
+  return PRODUCTS.filter((p) => p.category === 'random-packing').map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const catLabel = product.category === 'random-packing' ? 'Random Packing' : product.category === 'structured-packing' ? 'Structured Packing' : 'Mist Eliminators';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.metaDescription,
+  brand: { '@type': 'Brand', name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.' },
+  category: catLabel,
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: product.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={product.title}
+  description={product.metaDescription}
+  canonical={`https://www.mass-transfer.com/${product.category}/${product.slug}/`}
+  schema={[schema, faqSchema]}
+  breadcrumb={[
+    { label: catLabel, href: `/${product.category}/` },
+    { label: product.name },
+  ]}
+>
+  <div class="wrap">
+    <h1 class="page-title">{product.h1}</h1>
+    {product.image && (
+      <img
+        src={product.image}
+        alt={product.h1}
+        style="max-width:420px;border:1px solid var(--border);border-radius:8px;margin-bottom:24px;"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+    <p class="page-sub">{product.intro}</p>
+
+    <article class="prose">
+      <h2>Specifications</h2>
+      <table>
+        <thead>
+          <tr><th>Parameter</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          {product.specs.map((s) => (
+            <tr><td>{s.item}</td><td>{s.value}</td></tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Available Materials</h2>
+      <p>{product.materials.join(' · ')}</p>
+
+      <h2>Typical Applications</h2>
+      <ul>
+        {product.applications.map((a) => <li>{a}</li>)}
+      </ul>
+
+      <h2>How It Compares</h2>
+      <p>{product.comparison}</p>
+    </article>
+
+    <Faq faqs={product.faqs} />
+    <RelatedProducts slugs={product.category === 'random-packing' ? ['raschig-ring','cascade-mini-ring','imtp-equivalent'] : product.category === 'structured-packing' ? ['wire-mesh','corrugated-sheet','plastic-structured'] : ['wire-mesh-pad','vane-type','blade-type']} />
+    <Cta heading={`Get a quote for ${product.name}`} />
+  </div>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = await Astro.glob('../../content/blog/*.md');
+const sorted = posts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+---
+
+<Layout
+  title="Blog | Packing Selection Guides & Technical Articles"
+  description="Technical guides on tower packing selection: pall rings vs Raschig rings, mist eliminators, FGD packing, PTFE vs PP and more."
+  canonical="https://www.mass-transfer.com/blog/"
+  breadcrumb={[{ label: 'Blog' }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-sub">
+      Practical guides to help you select the right packing and internals — written from an engineering perspective, not a marketing one.
+    </p>
+
+    <div class="grid">
+      {sorted.map((post) => {
+        const slug = post.file.split('/').pop()!.replace(/\.md$/, '');
+        return (
+          <div class="card">
+            <h3><a href={`/blog/${slug}/`}>{post.frontmatter.title}</a></h3>
+            <p>{post.frontmatter.description}</p>
+            <p style="margin-top:8px;font-size:13px;color:var(--text-muted);">
+              {new Date(post.frontmatter.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,13 @@
+---
+import { SITE } from '../data/site';
+interface Props { heading?: string; }
+const { heading = 'Get a quote for your column or scrubber' } = Astro.props;
+---
+<div class="cta-box">
+  <h3>{heading}</h3>
+  <p style="color:var(--text-muted);margin:0 0 16px;">
+    Tell us your flow rate, medium and operating conditions — we recommend the right packing and internals, and quote factory-direct.
+  </p>
+  <a class="btn" href="/contact/">Request a Quote</a>
+  <a class="btn ghost" style="margin-left:8px;" href={`https://wa.me/${SITE.contact.whatsapp.replace('+','')}`}>WhatsApp</a>
+</div>
