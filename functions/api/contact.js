@@ -50,7 +50,10 @@ export async function onRequestPost({ request, env }) {
       .filter(Boolean);
     if (!to.length) return json({ ok: false, error: 'Mail service is not configured yet.' }, 500);
 
-    const from = env.FROM_EMAIL || 'onboarding@resend.dev';
+    // FROM_EMAIL 可以只写地址（form@example.com），也可以写完整发件人
+    // （Name <form@example.com>）；两种都接受，避免双重尖括号导致 Resend 拒信
+    const fromRaw = (env.FROM_EMAIL || 'onboarding@resend.dev').trim();
+    const from = fromRaw.includes('<') ? fromRaw : `Mass Transfer Inquiries <${fromRaw}>`;
     const when = new Date().toLocaleString('en-GB', {
       timeZone: 'Asia/Shanghai',
       year: 'numeric', month: 'short', day: '2-digit',
@@ -87,7 +90,7 @@ export async function onRequestPost({ request, env }) {
       method: 'POST',
       headers: { Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: `Mass Transfer Inquiries <${from}>`,
+        from,
         to,
         reply_to: email,
         subject: `[INQUIRY] ${name}${company ? ' / ' + company : ''}`,
