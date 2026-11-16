@@ -6,6 +6,7 @@ import type { Product } from './products';
 export const CERAMIC_BALLS: Product[] = [
   {
     slug: 'inert-alumina-ceramic-ball',
+    image: '/images/products/inert-alumina-ceramic-ball.webp',
     name: 'Inert Alumina Ceramic Ball',
     title: 'Inert Alumina Ceramic Ball | Catalyst Bed Support Media Supplier',
     h1: 'Inert Alumina Ceramic Balls',
@@ -54,6 +55,7 @@ export const CERAMIC_BALLS: Product[] = [
   },
   {
     slug: 'high-alumina-ball',
+    image: '/images/products/high-alumina-ball.webp',
     name: 'High Alumina Ball',
     title: 'High Alumina Ball Manufacturer | Refractory Grade Support Media',
     h1: 'High Alumina Balls',
@@ -97,6 +99,7 @@ export const CERAMIC_BALLS: Product[] = [
   },
   {
     slug: 'porous-ceramic-ball',
+    image: '/images/products/porous-ceramic-ball.webp',
     name: 'Porous Ceramic Ball',
     title: 'Porous Ceramic Ball | Open Pore Support and Catalyst Carrier Media',
     h1: 'Porous (Open Pore) Ceramic Balls',
@@ -140,6 +143,7 @@ export const CERAMIC_BALLS: Product[] = [
   },
   {
     slug: 'grinding-ball',
+    image: '/images/products/grinding-ball.webp',
     name: 'Grinding Ball',
     title: 'Alumina Grinding Ball | Wear Resistant Ceramic Mill Media',
     h1: 'Alumina Grinding Balls',

@@ -698,6 +698,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'ceramic-intalox-saddle',
+    image: '/images/products/ceramic-intalox-saddle.webp',
     name: 'Ceramic Intalox Saddle',
     title: 'Ceramic Intalox Saddle Supplier | Acid Resistant Random Packing',
     h1: 'Ceramic Intalox Saddle (Berl Saddle)',
@@ -741,6 +742,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'ceramic-super-saddle',
+    image: '/images/products/ceramic-super-saddle.webp',
     name: 'Ceramic Super Saddle',
     title: 'Ceramic Super Saddle | Improved Intalox Type Random Packing',
     h1: 'Ceramic Super Saddle (Improved Intalox)',
@@ -784,6 +786,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'plastic-multi-faceted-ball',
+    image: '/images/products/plastic-multi-faceted-ball.webp',
     name: 'Plastic Multi-Faceted Hollow Ball',
     title: 'Plastic Multi-Faceted Hollow Ball | Scrubber and Degassing Packing',
     h1: 'Plastic Multi-Faceted Hollow Ball',
@@ -827,6 +830,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'plastic-heilex-ring',
+    image: '/images/products/plastic-heilex-ring.webp',
     name: 'Plastic Heilex Ring',
     title: 'Plastic Heilex Ring Supplier | High Capacity Random Packing',
     h1: 'Plastic Heilex Ring',
@@ -870,6 +874,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'plastic-ralu-ring',
+    image: '/images/products/plastic-ralu-ring.webp',
     name: 'Plastic Ralu Ring',
     title: 'Plastic Ralu Ring | Grid Structured Random Packing Supplier',
     h1: 'Plastic Ralu Ring',
@@ -913,6 +918,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'plastic-rosette-ring',
+    image: '/images/products/plastic-rosette-ring.webp',
     name: 'Plastic Rosette Ring',
     title: 'Plastic Rosette Ring | Flower Ring Packing for Scrubbers and Cooling Towers',
     h1: 'Plastic Rosette (Flower) Ring',
@@ -956,6 +962,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'ceramic-structured-packing',
+    image: '/images/products/ceramic-structured-packing.webp',
     name: 'Ceramic Structured Packing',
     title: 'Ceramic Structured Packing Supplier | Corrugated Ceramic Packing',
     h1: 'Ceramic Corrugated Structured Packing',

@@ -6,6 +6,7 @@ import type { Product } from './products';
 export const ADSORBENTS: Product[] = [
   {
     slug: 'activated-alumina',
+    image: '/images/products/activated-alumina.webp',
     name: 'Activated Alumina',
     title: 'Activated Alumina Supplier | Desiccant, Fluoride Removal & Claus Duty',
     h1: 'Activated Alumina',
@@ -55,6 +56,7 @@ export const ADSORBENTS: Product[] = [
   },
   {
     slug: 'molecular-sieve-3a',
+    image: '/images/products/molecular-sieve-3a.webp',
     name: 'Molecular Sieve 3A',
     title: '3A Molecular Sieve Supplier | Potassium Form Zeolite Desiccant',
     h1: '3A Molecular Sieve',
@@ -99,6 +101,7 @@ export const ADSORBENTS: Product[] = [
   },
   {
     slug: 'molecular-sieve-4a',
+    image: '/images/products/molecular-sieve-4a.webp',
     name: 'Molecular Sieve 4A',
     title: '4A Molecular Sieve Supplier | Sodium Form Zeolite for Drying and CO2 Removal',
     h1: '4A Molecular Sieve',
@@ -144,6 +147,7 @@ export const ADSORBENTS: Product[] = [
   },
   {
     slug: 'molecular-sieve-5a',
+    image: '/images/products/molecular-sieve-5a.webp',
     name: 'Molecular Sieve 5A',
     title: '5A Molecular Sieve Supplier | PSA Oxygen and n-Paraffin Separation',
     h1: '5A Molecular Sieve',
@@ -188,6 +192,7 @@ export const ADSORBENTS: Product[] = [
   },
   {
     slug: 'molecular-sieve-13x',
+    image: '/images/products/molecular-sieve-13x.webp',
     name: 'Molecular Sieve 13X',
     title: '13X Molecular Sieve Supplier | CO2, Water and Mercaptan Removal',
     h1: '13X Molecular Sieve',

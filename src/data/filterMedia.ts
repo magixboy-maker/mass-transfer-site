@@ -5,6 +5,7 @@ import type { Product } from './products';
 export const FILTER_MEDIA: Product[] = [
   {
     slug: 'ceramic-sand-filter-media',
+    image: '/images/products/ceramic-sand-filter-media.webp',
     name: 'Ceramic Sand Filter Media',
     title: 'Ceramic Sand Filter Media | Water and Wastewater Filtration Media',
     h1: 'Ceramic Sand Filter Media',
@@ -48,6 +49,7 @@ export const FILTER_MEDIA: Product[] = [
   },
   {
     slug: 'ceramsite-filter-media',
+    image: '/images/products/ceramsite-filter-media.webp',
     name: 'Ceramsite Filter Media',
     title: 'Ceramsite Filter Media | Biofilter and Wastewater Media Supplier',
     h1: 'Ceramsite Filter Media',
