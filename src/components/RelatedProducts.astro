@@ -10,7 +10,7 @@ const items = slugs.map((s) => PRODUCTS.find((p) => p.slug === s)).filter(Boolea
     <div class="grid">
       {items.map((p) => (
         <div class="card">
-          <h3><a href={`/random-packing/${p!.slug}/`}>{p!.name}</a></h3>
+          <h3><a href={`/${p!.category}/${p!.slug}/`}>{p!.name}</a></h3>
           <p>{p!.metaDescription.slice(0, 110)}…</p>
         </div>
       ))}

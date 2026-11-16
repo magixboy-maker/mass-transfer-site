@@ -696,4 +696,306 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
+  {
+    slug: 'ceramic-intalox-saddle',
+    name: 'Ceramic Intalox Saddle',
+    title: 'Ceramic Intalox Saddle Supplier | Acid Resistant Random Packing',
+    h1: 'Ceramic Intalox Saddle (Berl Saddle)',
+    metaDescription:
+      'Ceramic Intalox saddles for acid absorption, scrubbing and high temperature duty. Better capacity and lower pressure drop than a ceramic Raschig ring.',
+    targetKeyword: 'ceramic intalox saddle',
+    category: 'random-packing',
+    intro:
+      'The Intalox saddle solves the problem the Raschig ring created: a ring can nest and block its own surface. A saddle cannot nest, so it keeps its open structure and its surface area in service. In ceramic form it is the packing of choice for acid towers, high temperature absorption and any duty where a ring would either break or channel.',
+    specs: [
+      { item: 'Shape', value: 'Saddle with concave-convex surfaces, no nesting orientation' },
+      { item: 'Compared with Raschig ring', value: 'Higher capacity, lower pressure drop, better surface utilisation' },
+      { item: 'Material family', value: 'Ceramic — acid and temperature resistant' },
+      { item: 'Key selection inputs', value: 'Medium and concentration, temperature, gas and liquid rates, allowable pressure drop' },
+      { item: 'Sizes', value: 'Multiple nominal sizes matched to column diameter and turndown' },
+    ],
+    materials: ['Acid resistant ceramic', 'Stoneware grade'],
+    applications: [
+      'Sulphuric acid drying and absorption towers',
+      'Hydrochloric acid absorption',
+      'Coke oven gas and flue gas scrubbing',
+      'High temperature absorption columns',
+      'Drying towers with aggressive media',
+    ],
+    comparison:
+      'Against a ceramic Raschig ring the saddle gives more capacity and less pressure drop for the same bed, which usually pays for the higher unit cost within a revamp. Against a ceramic pall ring it is less efficient per unit volume but cheaper and more forgiving in fouling service.',
+    faqs: [
+      {
+        q: 'Why choose a saddle rather than a ring in acid service?',
+        a: 'Because saddles do not nest. In a ring bed, rings can align and reduce effective surface; saddles keep an open structure, which matters most in the tall, high-liquid-load beds typical of acid absorption.',
+      },
+      {
+        q: 'Which ceramic grade is used for sulphuric acid?',
+        a: 'An acid resistant body selected against the concentration and temperature in the tower. Tell us both and we will specify the grade rather than assume a generic ceramic.',
+      },
+      {
+        q: 'Can these be supplied for a revamp with the same bed volume?',
+        a: 'Yes, and often with better performance at the same volume. We compare the existing ring size and the proposed saddle size before quoting.',
+      },
+    ],
+  },
+  {
+    slug: 'ceramic-super-saddle',
+    name: 'Ceramic Super Saddle',
+    title: 'Ceramic Super Saddle | Improved Intalox Type Random Packing',
+    h1: 'Ceramic Super Saddle (Improved Intalox)',
+    metaDescription:
+      'Ceramic super saddles with refined geometry for higher capacity and lower pressure drop than standard Intalox saddles in absorption and scrubbing towers.',
+    targetKeyword: 'ceramic super saddle',
+    category: 'random-packing',
+    intro:
+      'The super saddle is the Intalox geometry refined: the same non-nesting principle, with a shape that increases open area and reduces the resistance a gas sees as it passes through the bed. The gain is modest per unit volume, but across a tall acid tower it shows up as capacity or as pressure drop you do not have to spend fan power on.',
+    specs: [
+      { item: 'Shape', value: 'Refined saddle geometry, increased open area' },
+      { item: 'Compared with standard Intalox', value: 'Lower pressure drop and slightly higher capacity at similar efficiency' },
+      { item: 'Material family', value: 'Ceramic' },
+      { item: 'Key selection inputs', value: 'Gas and liquid rates, medium, temperature, allowable pressure drop' },
+      { item: 'Replacement note', value: 'Drop-in replacement where the existing bed is a saddle type' },
+    ],
+    materials: ['Acid resistant ceramic', 'Stoneware grade'],
+    applications: [
+      'Sulphuric acid absorption towers',
+      'Flue gas and tail gas scrubbing',
+      'Chemical absorption with aggressive media',
+      'High temperature packed towers',
+      'Revamps seeking capacity without new vessels',
+    ],
+    comparison:
+      'Against a standard Intalox saddle the gain is incremental and comes mainly in pressure drop; against structured packing it is far cheaper and far more tolerant of fouling, but lower in efficiency. It sits in the middle: better than a ring, more robust than structured packing.',
+    faqs: [
+      {
+        q: 'Is a super saddle worth the extra over a standard saddle?',
+        a: 'Where the column is pressure-drop limited or you are pushing capacity, yes. In a new tower with margin to spare, the standard saddle is usually the better economic choice.',
+      },
+      {
+        q: 'Can I mix saddle sizes in one bed?',
+        a: 'It is done to improve distribution near the walls and at the top of a bed, but the benefit has to be weighed against the packing work. We will advise on the specific case.',
+      },
+      {
+        q: 'What is the typical failure mode in service?',
+        a: 'Breakage during loading or thermal shock, and fouling in dirty service. Both are managed by correct loading practice and by upstream filtration rather than by changing the packing.',
+      },
+    ],
+  },
+  {
+    slug: 'plastic-multi-faceted-ball',
+    name: 'Plastic Multi-Faceted Hollow Ball',
+    title: 'Plastic Multi-Faceted Hollow Ball | Scrubber and Degassing Packing',
+    h1: 'Plastic Multi-Faceted Hollow Ball',
+    metaDescription:
+      'Plastic multi-faceted hollow balls for scrubbers, degassing, oil-water separation and cooling tower duty. Very low pressure drop and high void fraction.',
+    targetKeyword: 'plastic multi-faceted hollow ball',
+    category: 'random-packing',
+    intro:
+      'Hollow balls are the low-resistance option. With a very high void fraction and a shape that keeps the bed open, they are used where the duty is gas-liquid contact at low pressure drop, degassing, or where a bed must not plug: scrubbers, oil separation, cooling towers and tank covers. Efficiency per unit volume is lower than a ring — the trade is capacity and fouling tolerance.',
+    specs: [
+      { item: 'Shape', value: 'Hollow sphere with internal facets or ribs' },
+      { item: 'Character', value: 'Very high void fraction, low pressure drop, resistant to plugging' },
+      { item: 'Material family', value: 'Thermoplastics — PP, PE, PVC and others by medium' },
+      { item: 'Key selection inputs', value: 'Medium and temperature, gas and liquid rates, fouling risk, required contact efficiency' },
+      { item: 'Common alternative', value: 'Rings where efficiency matters more than pressure drop' },
+    ],
+    materials: ['PP', 'PE', 'PVC', 'CPVC', 'PVDF on request'],
+    applications: [
+      'Gas scrubbing and washing towers',
+      'Degassing and stripping columns',
+      'Oil-water separation and coalescing beds',
+      'Cooling tower fill and drift control',
+      'Tank covers and floating ball blankets',
+    ],
+    comparison:
+      'Compared with a plastic pall ring, a hollow ball gives much lower pressure drop and far better fouling tolerance but lower mass-transfer efficiency. In scrubbers where the limiting factor is fan power or plugging rather than efficiency, the ball wins; in an absorption column with a purity target, the ring does.',
+    faqs: [
+      {
+        q: 'When is a hollow ball the wrong choice?',
+        a: 'When the column has a real separation target. Balls give contact, not high efficiency — if the duty is absorption to a specified outlet concentration, a ring or structured packing is usually needed.',
+      },
+      {
+        q: 'Which plastic suits my medium?',
+        a: 'PP for most aqueous and mildly aggressive service, PVC/CPVC where chlorine or higher temperature is involved, PVDF for strong oxidants and solvents. Send the medium and operating temperature.',
+      },
+      {
+        q: 'Do the balls float?',
+        a: 'Most plastic grades do, which is exactly why they are used as floating blankets on tanks to cut evaporation and odour. In a packed tower they need a hold-down grid.',
+      },
+    ],
+  },
+  {
+    slug: 'plastic-heilex-ring',
+    name: 'Plastic Heilex Ring',
+    title: 'Plastic Heilex Ring Supplier | High Capacity Random Packing',
+    h1: 'Plastic Heilex Ring',
+    metaDescription:
+      'Plastic Heilex rings for high capacity scrubbing and absorption. Open lattice structure gives low pressure drop with better efficiency than a hollow ball.',
+    targetKeyword: 'plastic heilex ring',
+    category: 'random-packing',
+    intro:
+      'The Heilex ring is an open lattice construction: not a solid wall with windows, but a framework that keeps the bed open while still turning the gas and spreading the liquid. It sits between the hollow ball and the pall ring — more efficient than a ball, lower pressure drop than a conventional ring — which makes it a common choice in scrubbers and large absorption towers.',
+    specs: [
+      { item: 'Structure', value: 'Open lattice ring, no continuous wall' },
+      { item: 'Character', value: 'Low pressure drop, high capacity, good fouling resistance' },
+      { item: 'Position in the range', value: 'Between hollow balls and conventional rings on efficiency and pressure drop' },
+      { item: 'Material family', value: 'Thermoplastics' },
+      { item: 'Key selection inputs', value: 'Gas and liquid rates, medium, temperature, fouling risk, efficiency target' },
+    ],
+    materials: ['PP', 'PE', 'CPVC', 'PVDF on request'],
+    applications: [
+      'Flue gas and tail gas scrubbers',
+      'Absorption and cooling towers',
+      'Wet scrubbers with dust loading',
+      'Stripping columns',
+      'Gas washing with high liquid rates',
+    ],
+    comparison:
+      'A pall ring is more efficient per unit volume; a Heilex ring moves more gas for the same pressure drop and resists plugging better. In a scrubber with dust in the gas, the open structure usually wins because a ring bed blinds and the pressure drop climbs.',
+    faqs: [
+      {
+        q: 'How does it compare with a pall ring in a scrubber?',
+        a: 'Lower efficiency, lower pressure drop, better fouling tolerance. In dust-laden gas that combination usually outweighs the efficiency difference, because a blinded ring bed loses far more than the theoretical gap.',
+      },
+      {
+        q: 'Can it replace structured packing?',
+        a: 'Only where the duty is forgiving. Structured packing is significantly more efficient and more expensive; Heilex rings are chosen when capacity and robustness matter more than a tight outlet specification.',
+      },
+      {
+        q: 'What about liquid distribution?',
+        a: 'Open-structure packings still need a proper distributor. Poor initial distribution will channel in any bed, and it is the usual reason a revamp disappoints.',
+      },
+    ],
+  },
+  {
+    slug: 'plastic-ralu-ring',
+    name: 'Plastic Ralu Ring',
+    title: 'Plastic Ralu Ring | Grid Structured Random Packing Supplier',
+    h1: 'Plastic Ralu Ring',
+    metaDescription:
+      'Plastic Ralu rings with internal grid structure: high capacity, low pressure drop and good mechanical strength for absorption and scrubbing columns.',
+    targetKeyword: 'plastic ralu ring',
+    category: 'random-packing',
+    intro:
+      'The Ralu ring combines a ring outline with an internal grid, which gives it both the strength of a structured element and the handling convenience of a random packing. The result is a packing that holds its shape in deep beds, resists deformation under load, and still delivers low pressure drop — useful where a thin-walled ring would collapse or deform.',
+    specs: [
+      { item: 'Structure', value: 'Ring with internal grid / lattice, thicker section than a thin-wall ring' },
+      { item: 'Character', value: 'High mechanical strength, low pressure drop, good capacity' },
+      { item: 'Advantage', value: 'Resists deformation and nesting in deep beds' },
+      { item: 'Material family', value: 'Thermoplastics' },
+      { item: 'Key selection inputs', value: 'Bed depth, gas and liquid rates, medium, temperature' },
+    ],
+    materials: ['PP', 'PE', 'CPVC', 'PVDF on request'],
+    applications: [
+      'Absorption and scrubbing columns',
+      'Deep beds where ring deformation is a risk',
+      'Marine scrubbers and compact towers',
+      'Chemical process absorption',
+      'Columns with high liquid loads',
+    ],
+    comparison:
+      'Against a thin-wall pall ring, a Ralu ring trades a little efficiency for mechanical robustness and pressure drop. In deep beds and in towers where the packing is loaded and unloaded repeatedly, that trade is usually worth taking.',
+    faqs: [
+      {
+        q: 'Why does wall thickness matter in a plastic packing?',
+        a: 'Because a thin ring deforms under bed load and heat, and a deformed bed channels. The grid structure carries load through the element instead of relying on a thin wall.',
+      },
+      {
+        q: 'Is it suitable for high temperature service?',
+        a: 'Within the limits of the polymer chosen. PP has a modest temperature ceiling; CPVC and PVDF extend it. Give us the operating temperature and medium and we will confirm the material.',
+      },
+      {
+        q: 'How is it loaded?',
+        a: 'As random packing, in level layers, with the bed kept flat as it rises. Loading method affects performance as much as the element itself.',
+      },
+    ],
+  },
+  {
+    slug: 'plastic-rosette-ring',
+    name: 'Plastic Rosette Ring',
+    title: 'Plastic Rosette Ring | Flower Ring Packing for Scrubbers and Cooling Towers',
+    h1: 'Plastic Rosette (Flower) Ring',
+    metaDescription:
+      'Plastic rosette rings for scrubbers, cooling towers and gas washing. Open flower-shaped structure resists plugging and keeps pressure drop low.',
+    targetKeyword: 'plastic rosette ring',
+    category: 'random-packing',
+    intro:
+      'The rosette ring — often called a flower ring — is built from a ring of curved petals rather than a closed cylinder. That open geometry gives it high voidage and excellent resistance to plugging, which is why it appears in scrubbers, cooling towers and washing duties where the gas carries dust or the liquid carries solids.',
+    specs: [
+      { item: 'Structure', value: 'Ring of curved petals / open flower geometry' },
+      { item: 'Character', value: 'High voidage, low pressure drop, strong anti-plugging behaviour' },
+      { item: 'Position in the range', value: 'Lower efficiency than rings; higher capacity and fouling tolerance' },
+      { item: 'Material family', value: 'Thermoplastics' },
+      { item: 'Key selection inputs', value: 'Solids loading, gas and liquid rates, temperature, efficiency target' },
+    ],
+    materials: ['PP', 'PE', 'PVC', 'CPVC'],
+    applications: [
+      'Wet scrubbers with particulate loading',
+      'Cooling towers and heat exchange packing',
+      'Gas washing and humidification',
+      'Dust removal towers',
+      'Waste gas treatment with fouling risk',
+    ],
+    comparison:
+      'Compared with a hollow ball it offers more surface and better contact per unit volume; compared with a pall ring it is far less efficient but far more forgiving. It is chosen where the bed would otherwise plug, not where a tight outlet concentration has to be met.',
+    faqs: [
+      {
+        q: 'Where does a rosette ring perform best?',
+        a: 'In washing and cooling duty with dirty gas, where a ring bed would blind. If the column has a separation specification, use a ring or structured packing instead.',
+      },
+      {
+        q: 'Can it be used in cooling towers?',
+        a: 'Yes, it is used as splash-type fill where a structured film fill would foul or where the water is dirty.',
+      },
+      {
+        q: 'What sizes are available?',
+        a: 'Several nominal sizes to suit tower diameter and the balance between surface area and plugging risk — tell us the duty and we will propose a size.',
+      },
+    ],
+  },
+  {
+    slug: 'ceramic-structured-packing',
+    name: 'Ceramic Structured Packing',
+    title: 'Ceramic Structured Packing Supplier | Corrugated Ceramic Packing',
+    h1: 'Ceramic Corrugated Structured Packing',
+    metaDescription:
+      'Ceramic corrugated structured packing for sulphuric acid, FGD and high temperature absorption. Acid resistant, thermally stable, high efficiency per unit volume.',
+    targetKeyword: 'ceramic structured packing',
+    category: 'structured-packing',
+    intro:
+      'Structured packing gives the highest efficiency per unit volume of any packing type, but metal cannot survive hot acid and plastic cannot survive the temperature. Ceramic corrugated packing fills that gap: the same ordered, cross-corrugated geometry in a body that resists sulphuric acid and operates at temperatures where polymers are out of the question.',
+    specs: [
+      { item: 'Geometry', value: 'Cross-corrugated ceramic sheets, ordered block structure' },
+      { item: 'Efficiency', value: 'Highest of the packing types per unit volume, with low pressure drop per theoretical stage' },
+      { item: 'Material character', value: 'Acid resistant ceramic; thermally stable at high temperature' },
+      { item: 'Key selection inputs', value: 'Medium and concentration, temperature, gas and liquid loads, efficiency target' },
+      { item: 'Handling', value: 'Supplied in blocks; requires care in loading to keep sheets aligned and undistorted' },
+      { item: 'Grades', value: 'Several surface-area grades available — advise duty for selection' },
+    ],
+    materials: ['Acid resistant ceramic', 'Silicate ceramic'],
+    applications: [
+      'Sulphuric acid drying and absorption towers',
+      'Flue gas desulphurisation and tail gas treatment',
+      'Coke oven gas desulphurisation',
+      'High temperature absorption and stripping',
+      'Nitric and hydrochloric acid absorption',
+    ],
+    comparison:
+      'Against ceramic random packing it is far more efficient per unit volume and lower in pressure drop, at higher cost and with much stricter loading requirements. Against metal structured packing it is heavier and more fragile, but it is the only option in hot acid where metal corrodes.',
+    faqs: [
+      {
+        q: 'Why not use metal structured packing in acid service?',
+        a: 'Because it corrodes. In sulphuric acid drying and absorption, and in FGD with chlorides present, the metal either fails or contaminates the product — ceramic is the standard answer.',
+      },
+      {
+        q: 'How is it installed?',
+        a: 'In ordered blocks, layer by layer, with each block seated square and the sheets undistorted. A distorted block channels and loses most of the benefit of structured packing.',
+      },
+      {
+        q: 'Can it replace random packing in an existing tower?',
+        a: 'Often yes, with a shorter bed for the same duty — but the support, distributor and pressure-drop budget all have to be checked. Send the column data and we will compare both options.',
+      },
+    ],
+  },
 ];

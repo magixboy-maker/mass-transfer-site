@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+import { NEW_CATEGORIES } from '../../data/categories';
+import { itemsOf } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return NEW_CATEGORIES.map((c) => ({ params: { category: c.slug }, props: { cat: c } }));
+}
+
+const { cat } = Astro.props;
+const items = itemsOf(cat.slug);
+---
+
+<Layout
+  title={cat.title}
+  description={cat.description}
+  canonical={`https://www.mass-transfer.com/${cat.slug}/`}
+  breadcrumb={[{ label: cat.label }]}
+>
+  <div class="wrap">
+    <h1 class="page-title">{cat.h1}</h1>
+    <p class="page-sub">{cat.sub}</p>
+
+    <div class="grid">
+      {items.map((p) => (
+        <div class="card">
+          <h3><a href={`/${p.category}/${p.slug}/`}>{p.name}</a></h3>
+          <p>{p.metaDescription.slice(0, 112)}…</p>
+        </div>
+      ))}
+    </div>
+
+    <article class="prose" style="margin-top:36px;">
+      {cat.intro.map((para) => <p>{para}</p>)}
+
+      <h2>{cat.relatedTitle}</h2>
+      <ul>
+        {cat.related.map((r) => (
+          <li><a href={r.href}>{r.label}</a> — {r.desc}</li>
+        ))}
+      </ul>
+    </article>
+
+    <Cta heading={`Ask about ${cat.label.toLowerCase()}`} />
+  </div>
+</Layout>

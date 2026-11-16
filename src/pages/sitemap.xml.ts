@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { PRODUCTS } from '../data/products';
 import { APPLICATIONS } from '../data/applications';
 import { INTERNALS } from '../data/internals';
+import { CATALOG } from '../data/catalog';
+import { NEW_CATEGORIES } from '../data/categories';
 
 // 构建时自动生成 sitemap.xml —— 新增文章/产品后不需要手动改这里
 const BASE = 'https://www.mass-transfer.com';
@@ -32,7 +34,9 @@ export const GET: APIRoute = () => {
 
   const entries: { path: string; freq: string }[] = [
     ...STATIC_PATHS,
+    ...NEW_CATEGORIES.map((c) => ({ path: `/${c.slug}/`, freq: 'monthly' })),
     ...PRODUCTS.map((p) => ({ path: `/${p.category}/${p.slug}/`, freq: 'monthly' })),
+    ...CATALOG.map((p) => ({ path: `/${p.category}/${p.slug}/`, freq: 'monthly' })),
     ...INTERNALS.map((i) => ({ path: `/tower-internals/${i.slug}/`, freq: 'monthly' })),
     ...APPLICATIONS.map((a) => ({ path: `/applications/${a.slug}/`, freq: 'monthly' })),
     ...blogSlugs.map((s) => ({ path: `/blog/${s}/`, freq: 'monthly' })),

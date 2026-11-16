@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import { NEW_CATEGORIES } from '../../data/categories';
+import { CATALOG, itemsOf } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return CATALOG.map((p) => ({ params: { category: p.category, slug: p.slug }, props: { item: p } }));
+}
+
+const { item } = Astro.props;
+const cat = NEW_CATEGORIES.find((c) => c.slug === item.category)!;
+const siblings = itemsOf(item.category).filter((p) => p.slug !== item.slug).slice(0, 3);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: item.name,
+  description: item.metaDescription,
+  brand: { '@type': 'Brand', name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.' },
+  category: cat.label,
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: item.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={item.title}
+  description={item.metaDescription}
+  canonical={`https://www.mass-transfer.com/${item.category}/${item.slug}/`}
+  schema={[schema, faqSchema]}
+  breadcrumb={[
+    { label: cat.label, href: `/${cat.slug}/` },
+    { label: item.name },
+  ]}
+>
+  <div class="wrap">
+    <h1 class="page-title">{item.h1}</h1>
+    {item.image && (
+      <img
+        src={item.image}
+        alt={item.h1}
+        style="max-width:420px;border:1px solid var(--border);border-radius:8px;margin-bottom:24px;"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+    <p class="page-sub">{item.intro}</p>
+
+    <article class="prose">
+      <h2>Specifications</h2>
+      <table>
+        <thead>
+          <tr><th>Parameter</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          {item.specs.map((s) => (
+            <tr><td>{s.item}</td><td>{s.value}</td></tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Available Materials</h2>
+      <p>{item.materials.join(' · ')}</p>
+
+      <h2>Typical Applications</h2>
+      <ul>
+        {item.applications.map((a) => <li>{a}</li>)}
+      </ul>
+
+      <h2>How the Options Compare</h2>
+      <p>{item.comparison}</p>
+    </article>
+
+    <Faq faqs={item.faqs} />
+
+    {siblings.length > 0 && (
+      <section style="margin-top:36px;">
+        <h2>More {cat.label}</h2>
+        <div class="grid">
+          {siblings.map((s) => (
+            <div class="card">
+              <h3><a href={`/${s.category}/${s.slug}/`}>{s.name}</a></h3>
+              <p>{s.metaDescription.slice(0, 110)}…</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <Cta heading={`Ask about ${item.name.toLowerCase()}`} />
+  </div>
+</Layout>
