@@ -58,6 +58,29 @@ img { max-width: 100%; height: auto; display: block; }
 
 .nav-toggle { display: none; background: none; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 18px; color: var(--text); }
 
+/* Products dropdown */
+.nav-group { position: relative; display: flex; align-items: center; }
+.nav-group > a { display: inline-flex; align-items: center; gap: 4px; }
+.nav-group .caret { font-size: 10px; opacity: .55; line-height: 1; }
+.nav-sub {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 224px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, .12);
+  z-index: 60;
+}
+.nav-group:hover .nav-sub,
+.nav-group:focus-within .nav-sub { display: flex; }
+.nav-sub a { padding: 8px 10px; font-size: 14px; border-radius: 6px; }
+
 /* Hero */
 .hero { background: var(--bg-soft); border-bottom: 1px solid var(--border); padding: 56px 0; }
 .hero h1 { margin: 0 0 16px; font-size: 34px; line-height: 1.2; letter-spacing: -0.02em; }
@@ -136,6 +159,19 @@ main { padding: 40px 0 60px; }
   .nav-toggle { display: block; }
   .nav { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 16px 16px; }
   .nav.open { display: flex; }
+  /* 移动端：子项展开为缩进列表，不使用浮层 */
+  .nav-group { display: block; width: 100%; }
+  .nav-group .caret { display: none; }
+  .nav-sub {
+    position: static;
+    display: flex;
+    min-width: 0;
+    padding: 0 0 0 14px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .nav-sub a { padding: 6px 10px; font-size: 14px; color: var(--text-muted); }
   .hero h1 { font-size: 27px; }
   .page-title { font-size: 25px; }
 }

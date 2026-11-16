@@ -56,9 +56,26 @@ const canonicalUrl = canonical || new URL(url, SITE.url).toString();
         <a class="logo" href="/">MASS<span>·</span>TRANSFER</a>
         <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
         <nav class="nav" id="nav">
-          {NAV.map((item) => (
-            <a href={item.href} class={url === item.href ? 'active' : ''}>{item.label}</a>
-          ))}
+          {NAV.map((item) =>
+            'children' in item && item.children ? (
+              <div class="nav-group">
+                <a
+                  href={item.href}
+                  class={item.children.some((c) => c.href === url) ? 'active' : ''}
+                  aria-haspopup="true"
+                >
+                  {item.label}<span class="caret" aria-hidden="true">▾</span>
+                </a>
+                <div class="nav-sub">
+                  {item.children.map((c) => (
+                    <a href={c.href} class={url === c.href ? 'active' : ''}>{c.label}</a>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <a href={item.href} class={url === item.href ? 'active' : ''}>{item.label}</a>
+            )
+          )}
         </nav>
       </div>
     </header>

@@ -28,10 +28,19 @@ export const SITE = {
 // 导航结构（B1）
 export const NAV = [
   { label: 'Home', href: '/' },
-  { label: 'Random Packing', href: '/random-packing/' },
-  { label: 'Structured Packing', href: '/structured-packing/' },
-  { label: 'Mist Eliminators', href: '/mist-eliminator/' },
-  { label: 'Tower Internals', href: '/tower-internals/' },
+  {
+    label: 'Products',
+    href: '/random-packing/',
+    children: [
+      { label: 'Random Packing', href: '/random-packing/' },
+      { label: 'Structured Packing', href: '/structured-packing/' },
+      { label: 'Mist Eliminators', href: '/mist-eliminator/' },
+      { label: 'Tower Internals', href: '/tower-internals/' },
+      { label: 'Ceramic Balls', href: '/ceramic-balls/' },
+      { label: 'Adsorbents & Desiccants', href: '/adsorbents/' },
+      { label: 'Filter Media', href: '/filter-media/' },
+    ],
+  },
   { label: 'Applications', href: '/applications/' },
   { label: 'Materials', href: '/materials/' },
   { label: 'Quality & Tests', href: '/quality/' },
