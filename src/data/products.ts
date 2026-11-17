@@ -16,6 +16,8 @@ export interface Product {
   applications: string[];
   comparison: string;
   faqs: { q: string; a: string }[];
+  /** 材质/型式细分页入口（用于总览页导流，如 Raschig Ring 的金属/塑料/陶瓷三版） */
+  variants?: { label: string; href: string; desc: string }[];
 }
 
 export const PRODUCTS: Product[] = [
@@ -206,8 +208,29 @@ export const PRODUCTS: Product[] = [
       'Cooling and condensation',
     ],
     comparison:
-      'The Raschig ring is the cheapest and simplest packing but has the lowest capacity of the common geometries. For new columns, a pall ring or saddle usually pays back through smaller diameter or lower energy cost; Raschig rings still win for very simple or fouling service.',
+      'The Raschig ring is the cheapest and simplest packing but has the lowest capacity of the common geometries. For new columns, a pall ring or saddle usually pays back through smaller diameter or lower energy cost; Raschig rings still win for very simple or fouling service. In practice the material decision matters more than the geometry: metal where the duty is hot or solvent-laden, plastic where the stream is acidic and below 100–140 °C, ceramic where acid and temperature rule out both.',
+    variants: [
+      {
+        label: 'Metal Raschig Ring',
+        href: '/random-packing/raschig-ring-metal/',
+        desc: 'SS304, SS316L and carbon steel, 16–100 mm. High temperature, no breakage, solvent resistant.',
+      },
+      {
+        label: 'Plastic Raschig Ring',
+        href: '/random-packing/raschig-ring-plastic/',
+        desc: 'PP, CPVC, PVDF and PTFE. Acid absorption and scrubbing, one-seventh the weight of ceramic.',
+      },
+      {
+        label: 'Ceramic Raschig Ring',
+        href: '/random-packing/raschig-ring-ceramic/',
+        desc: 'Acid-resistant stoneware for sulphuric acid drying, HCl absorption and chlorine drying.',
+      },
+    ],
     faqs: [
+      {
+        q: 'Metal, plastic or ceramic — how do I choose?',
+        a: 'Start from the medium and the temperature. Clean streams below 100 °C with acid or caustic go to PP; 100–140 °C or chlorinated solvents go to PVDF; HF and wet chlorine need PTFE. Above the plastic limit, or where the stream carries solvents, use metal. Concentrated sulphuric acid, chlorine drying and hot acid where no metal survives take ceramic. Weight and support plate capacity then decide between metal and ceramic.',
+      },
       {
         q: 'Why would I choose a Raschig ring today?',
         a: 'Low cost, robustness and resistance to fouling. For very simple duties or dirty streams the marginal capacity of a modern ring is wasted, so a Raschig ring is the economical choice.',
@@ -227,6 +250,171 @@ export const PRODUCTS: Product[] = [
       {
         q: 'What wall thickness do you recommend?',
         a: 'It depends on column diameter and load. We recommend the thickness based on your mechanical design.',
+      },
+    ],
+  },
+  {
+    slug: 'raschig-ring-metal',
+    name: 'Metal Raschig Ring',
+    image: '/images/products/raschig-ring-metal.webp',
+    title: 'Metal Raschig Ring Supplier | SS304, SS316L & Carbon Steel Rings',
+    h1: 'Metal Raschig Ring (SS304 / SS316L)',
+    metaDescription:
+      'Metal Raschig rings in SS304, SS316, SS316L and carbon steel from 16 to 100 mm. Seam-welded construction for distillation, stripping and high-temperature absorption.',
+    targetKeyword: 'metal raschig ring',
+    category: 'random-packing',
+    intro:
+      'The metal Raschig ring is the version of the classic cylinder that survives where plastic and ceramic cannot: high temperature, thermal cycling, solvent attack, and columns that are opened and reloaded often without wanting a single broken piece in the bed. It is the cheapest metal random packing per cubic metre and still the default choice for simple duties where capacity is not the constraint.',
+    specs: [
+      { item: 'Nominal size', value: '16 mm / 25 mm / 38 mm / 50 mm / 76 mm / 100 mm' },
+      { item: 'Material', value: 'SS304, SS316, SS316L, carbon steel, copper' },
+      { item: 'Specific surface area', value: '60–340 m²/m³ (size dependent)' },
+      { item: 'Void fraction', value: '88–95%' },
+      { item: 'Bulk density', value: 'SS304: 300–700 kg/m³ (size and wall dependent)' },
+      { item: 'Wall thickness', value: '0.4–1.2 mm, selected against column load' },
+      { item: 'Construction', value: 'Seam-welded strip, or drawn tube for heavy walls' },
+      { item: 'Packing factor', value: '58–180 m⁻¹' },
+    ],
+    materials: ['SS304', 'SS316', 'SS316L', 'Carbon steel', 'Copper'],
+    applications: [
+      'Vacuum and high-temperature distillation',
+      'Solvent recovery and stripping',
+      'Direct-contact cooling and heat exchange',
+      'Absorption columns above the plastic temperature limit',
+      'Columns subject to frequent opening and reloading',
+    ],
+    comparison:
+      'Against a ceramic Raschig ring of the same size, the metal version will not shatter on loading and carries a thinner wall, so it holds more void fraction and roughly 15–25% more capacity. Against a plastic ring it survives temperatures and solvents that would soften or swell PP. Against a metal pall ring it is cheaper per cubic metre but gives up about 40% of capacity, which is the trade you are making: price of the packing against diameter of the column.',
+    faqs: [
+      {
+        q: 'Should I specify SS304 or SS316L?',
+        a: 'SS304 covers clean hydrocarbon, steam and general refinery service. SS316L adds molybdenum and is the correct choice for chloride-bearing streams, sour gas, seawater cooling and any duty with a real risk of pitting. The price difference is small next to the cost of a re-packing.',
+      },
+      {
+        q: 'What wall thickness do you recommend?',
+        a: 'Wall thickness is a mechanical decision, not a mass-transfer one. Deep beds and large column diameters load the bottom rings hardest, so we size the wall against your bed depth and support plate design — typically 0.4–0.6 mm for shallow beds and 0.8–1.2 mm for deep or large-diameter columns.',
+      },
+      {
+        q: 'Can you supply non-standard diameters?',
+        a: 'Yes. Rings outside the standard 16–100 mm range, and rings in alloys such as 2205, 904L or Monel, are made to order. Send the drawing or the operating conditions and we will confirm feasibility and lead time.',
+      },
+      {
+        q: 'Why use copper Raschig rings?',
+        a: 'Copper rings are used in a few specialised duties where the metal itself takes part in the process — for example removing residual oxygen or certain sulphur compounds from a gas stream. In ordinary mass transfer service there is no reason to pay for copper.',
+      },
+      {
+        q: 'How does it compare with a metal pall ring on cost?',
+        a: 'A Raschig ring uses less strip per cubic metre and needs no slotting or internal tongue, so it is cheaper to buy. The pall ring usually wins overall because its higher capacity lets you use a smaller column or a shallower bed. Where the column already exists and the duty is undemanding, the Raschig ring is the economical refill.',
+      },
+    ],
+  },
+  {
+    slug: 'raschig-ring-plastic',
+    name: 'Plastic Raschig Ring',
+    image: '/images/products/raschig-ring-plastic.webp',
+    title: 'Plastic Raschig Ring Manufacturer | PP, PVDF, CPVC & PTFE',
+    h1: 'Plastic Raschig Ring (PP / PVDF / PTFE)',
+    metaDescription:
+      'Plastic Raschig rings in PP, PVDF, CPVC and PTFE for acid absorption, gas scrubbing and stripping. Light, chemically resistant and low in cost per cubic metre.',
+    targetKeyword: 'plastic raschig ring',
+    category: 'random-packing',
+    intro:
+      'The plastic Raschig ring is the workhorse of scrubbing and acid absorption. It weighs a fraction of ceramic, does not break in handling, needs a far lighter support plate, and costs less per cubic metre than any other random packing we supply. Its limits are temperature and, for some grades, the solvent in the stream — both of which are known before the order, not after.',
+    specs: [
+      { item: 'Nominal size', value: '16 mm / 25 mm / 38 mm / 50 mm / 76 mm' },
+      { item: 'Material', value: 'PP, CPVC, PVDF, PTFE' },
+      { item: 'Specific surface area', value: '90–340 m²/m³ (size dependent)' },
+      { item: 'Void fraction', value: '88–94%' },
+      { item: 'Bulk density', value: 'PP: 80–140 kg/m³; PVDF: 130–190 kg/m³' },
+      { item: 'Wall thickness', value: '1.0–3.0 mm, size dependent' },
+      { item: 'Max service temperature', value: 'PP 100 °C · CPVC 95 °C · PVDF 140 °C · PTFE 250 °C' },
+      { item: 'Packing factor', value: '55–170 m⁻¹' },
+    ],
+    materials: ['PP', 'CPVC', 'PVDF', 'PTFE'],
+    applications: [
+      'HCl, H₂SO₄ and mixed acid absorption',
+      'Caustic and amine gas scrubbing',
+      'CO₂ and H₂S removal',
+      'Ammonia and VOC stripping in wastewater treatment',
+      'Cooling towers and humidification',
+    ],
+    comparison:
+      'Against a ceramic Raschig ring the plastic version is about one-seventh the weight, does not break, and allows a much lighter support structure — but it stops at 100–140 °C in PP or PVDF. Against a plastic pall ring it is cheaper and simpler, at roughly 35–40% less capacity for the same nominal size. Against metal it wins on acid resistance and on cost, and loses on temperature and on mechanical strength in deep beds.',
+    faqs: [
+      {
+        q: 'PP or PVDF — which one do I need?',
+        a: 'PP is the default for hydrochloric and sulphuric acid absorption, caustic scrubbing and general gas washing up to about 100 °C. Move to PVDF when the temperature runs 100–140 °C, or when the stream carries chlorinated hydrocarbons or oxidising species that attack PP.',
+      },
+      {
+        q: 'When is PTFE actually necessary?',
+        a: 'PTFE is the answer for hydrofluoric acid, wet chlorine, hot concentrated caustic and any duty where trace metal ions or degraded polymer cannot be tolerated in the product. It costs several times PP, so it is used where nothing else survives rather than as a general upgrade.',
+      },
+      {
+        q: 'Can plastic rings be used in HF service?',
+        a: 'Yes, in PTFE or PVDF depending on concentration and temperature. Ceramic cannot be used at all — hydrofluoric acid attacks the silica in the body — and stainless steel is also unsuitable. This is one of the few duties where plastic is the only practical option.',
+      },
+      {
+        q: 'How much load does a plastic bed put on the support plate?',
+        a: 'Roughly one-seventh of a ceramic bed of the same depth, which often lets a revamp add bed depth without changing the support structure. We calculate the wet bed load, including liquid holdup, for your support plate design.',
+      },
+      {
+        q: 'Do plastic rings need a different distributor?',
+        a: 'No, but the lighter bed is easier to fluidise and easier to disturb with a badly aimed inlet. If the column has a side entry close to the bed, a hold-down grid or a deeper top layer of the same rings is worth specifying.',
+      },
+    ],
+  },
+  {
+    slug: 'raschig-ring-ceramic',
+    name: 'Ceramic Raschig Ring',
+    image: '/images/products/raschig-ring-ceramic.webp',
+    title: 'Ceramic Raschig Ring Supplier | Acid-Resistant Stoneware Packing',
+    h1: 'Ceramic Raschig Ring',
+    metaDescription:
+      'Acid-resistant ceramic Raschig rings for sulphuric acid drying towers, HCl absorption and chlorine drying. High temperature tolerance, low cost, proven in acid plants.',
+    targetKeyword: 'ceramic raschig ring',
+    category: 'random-packing',
+    intro:
+      'The ceramic Raschig ring is the oldest packing still in daily service, and in acid plants it is still the one most beds are filled with. Chemical stoneware shrugs off sulphuric acid, hydrochloric acid, chlorine and oxidising media that destroy metal, and it holds its shape at temperatures where every plastic has already failed. What it will not tolerate is hydrofluoric acid, thermal shock, or rough handling.',
+    specs: [
+      { item: 'Nominal size', value: '25 mm / 38 mm / 50 mm / 76 mm / 100 mm' },
+      { item: 'Material', value: 'Acid-resistant chemical stoneware / porcelain' },
+      { item: 'Specific surface area', value: '50–190 m²/m³ (size dependent)' },
+      { item: 'Void fraction', value: '70–80%' },
+      { item: 'Bulk density', value: '600–750 kg/m³' },
+      { item: 'Water absorption', value: 'Below 1%' },
+      { item: 'Max service temperature', value: 'Up to about 1000 °C, subject to thermal shock limits' },
+      { item: 'Acid resistance', value: 'Good in H₂SO₄, HCl, HNO₃, chlorine; not suitable for HF' },
+    ],
+    materials: ['Acid-resistant ceramic', 'Porcelain'],
+    applications: [
+      'Sulphuric acid drying towers (concentrated H₂SO₄)',
+      'Hydrochloric acid absorption',
+      'Chlorine drying and scrubbing',
+      'NOx and SO₂ absorption',
+      'High-temperature gas washing and cooling',
+    ],
+    comparison:
+      'Against a plastic Raschig ring the ceramic version takes four to eight times the temperature and resists solvents entirely, at roughly seven times the weight and with a real risk of breakage in handling. Against a metal ring it wins on acid resistance and price and loses on strength — a ceramic bed cannot take the mechanical abuse a steel bed can. Against a ceramic pall ring or saddle it is cheaper and lower in capacity, which is why it survives in acid towers where the duty is simple and the volume is large.',
+    faqs: [
+      {
+        q: 'Can ceramic Raschig rings be used with hydrofluoric acid?',
+        a: 'No. HF attacks the silica in the ceramic body and will destroy the packing. For HF service use PTFE or carbon packing instead. The same applies to fluorosilicate-bearing streams.',
+      },
+      {
+        q: 'What is the breakage rate in transport and loading?',
+        a: 'For well-packed standard rings, breakage in transport is normally in the low single-digit percent and is covered in the quoted quantity. Loading through a chute with a soft landing, rather than dropping the bed from height, is the single biggest factor — we can advise on the loading method for large fills.',
+      },
+      {
+        q: 'Ceramic Raschig ring or ceramic pall ring?',
+        a: 'The pall ring gives roughly 30–40% more capacity and better surface utilisation for a modest price increase, and it is what we would recommend for a new tower. The Raschig ring stays competitive in very large acid towers where the bed is deep, the duty is simple, and the price per cubic metre dominates the decision.',
+      },
+      {
+        q: 'How do I size the support plate for a ceramic bed?',
+        a: 'Use the wet bulk density, not the dry figure — a ceramic bed holding acid is significantly heavier. We provide the wet loading per metre of bed depth for your support plate and beam design.',
+      },
+      {
+        q: 'Is thermal shock a problem?',
+        a: 'Yes, it is the main failure mode in ceramic beds. Sudden heating or cooling, and liquid slugs hitting a hot bed, will crack rings. If the column cycles, heat up and cool down slowly and keep liquid out of a hot bed.',
       },
     ],
   },
@@ -596,6 +784,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'vane-type',
+    image: '/images/products/vane-type.webp',
     name: 'Vane Mist Eliminator',
     title: 'Vane Mist Eliminator | Chevron Separator Manufacturer',
     h1: 'Vane (Chevron) Mist Eliminator',
@@ -647,6 +836,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'blade-type',
+    image: '/images/products/blade-type.webp',
     name: 'Blade Mist Eliminator',
     title: 'Blade Mist Eliminator | High-Performance Separator',
     h1: 'Blade Mist Eliminator',

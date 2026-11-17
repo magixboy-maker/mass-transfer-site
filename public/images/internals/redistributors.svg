@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Cross-section of a combined collector and redistributor between two packed beds">
+  <rect width="800" height="600" fill="#ffffff"/>
+
+  <!-- column shell -->
+  <line x1="200" y1="28" x2="200" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <line x1="600" y1="28" x2="600" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <g stroke="#b7c4d4" stroke-width="1">
+    <line x1="186" y1="40" x2="200" y2="54"/><line x1="186" y1="76" x2="200" y2="90"/>
+    <line x1="186" y1="112" x2="200" y2="126"/><line x1="186" y1="148" x2="200" y2="162"/>
+    <line x1="186" y1="184" x2="200" y2="198"/><line x1="186" y1="220" x2="200" y2="234"/>
+    <line x1="186" y1="256" x2="200" y2="270"/><line x1="186" y1="292" x2="200" y2="306"/>
+    <line x1="186" y1="328" x2="200" y2="342"/><line x1="186" y1="364" x2="200" y2="378"/>
+    <line x1="186" y1="400" x2="200" y2="414"/><line x1="186" y1="436" x2="200" y2="450"/>
+    <line x1="186" y1="472" x2="200" y2="486"/><line x1="186" y1="508" x2="200" y2="522"/>
+    <line x1="186" y1="544" x2="200" y2="558"/>
+    <line x1="614" y1="40" x2="600" y2="54"/><line x1="614" y1="76" x2="600" y2="90"/>
+    <line x1="614" y1="112" x2="600" y2="126"/><line x1="614" y1="148" x2="600" y2="162"/>
+    <line x1="614" y1="184" x2="600" y2="198"/><line x1="614" y1="220" x2="600" y2="234"/>
+    <line x1="614" y1="256" x2="600" y2="270"/><line x1="614" y1="292" x2="600" y2="306"/>
+    <line x1="614" y1="328" x2="600" y2="342"/><line x1="614" y1="364" x2="600" y2="378"/>
+    <line x1="614" y1="400" x2="600" y2="414"/><line x1="614" y1="436" x2="600" y2="450"/>
+    <line x1="614" y1="472" x2="600" y2="486"/><line x1="614" y1="508" x2="600" y2="522"/>
+    <line x1="614" y1="544" x2="600" y2="558"/>
+  </g>
+
+  <!-- upper bed -->
+  <rect x="202" y="44" width="396" height="152" fill="#f7f9fb" stroke="#c3d0de" stroke-width="1"/>
+  <g stroke="#a9bacd" stroke-width="1.4" fill="none">
+    <circle cx="224" cy="70" r="11"/><circle cx="264" cy="70" r="11"/><circle cx="304" cy="70" r="11"/>
+    <circle cx="344" cy="70" r="11"/><circle cx="384" cy="70" r="11"/><circle cx="424" cy="70" r="11"/>
+    <circle cx="464" cy="70" r="11"/><circle cx="504" cy="70" r="11"/><circle cx="544" cy="70" r="11"/>
+    <circle cx="584" cy="70" r="11"/>
+    <circle cx="244" cy="98" r="11"/><circle cx="284" cy="98" r="11"/><circle cx="324" cy="98" r="11"/>
+    <circle cx="364" cy="98" r="11"/><circle cx="404" cy="98" r="11"/><circle cx="444" cy="98" r="11"/>
+    <circle cx="484" cy="98" r="11"/><circle cx="524" cy="98" r="11"/><circle cx="564" cy="98" r="11"/>
+    <circle cx="224" cy="126" r="11"/><circle cx="264" cy="126" r="11"/><circle cx="304" cy="126" r="11"/>
+    <circle cx="344" cy="126" r="11"/><circle cx="384" cy="126" r="11"/><circle cx="424" cy="126" r="11"/>
+    <circle cx="464" cy="126" r="11"/><circle cx="504" cy="126" r="11"/><circle cx="544" cy="126" r="11"/>
+    <circle cx="584" cy="126" r="11"/>
+    <circle cx="244" cy="154" r="11"/><circle cx="284" cy="154" r="11"/><circle cx="324" cy="154" r="11"/>
+    <circle cx="364" cy="154" r="11"/><circle cx="404" cy="154" r="11"/><circle cx="444" cy="154" r="11"/>
+    <circle cx="484" cy="154" r="11"/><circle cx="524" cy="154" r="11"/><circle cx="564" cy="154" r="11"/>
+    <circle cx="224" cy="182" r="11"/><circle cx="264" cy="182" r="11"/><circle cx="304" cy="182" r="11"/>
+    <circle cx="344" cy="182" r="11"/><circle cx="384" cy="182" r="11"/><circle cx="424" cy="182" r="11"/>
+    <circle cx="464" cy="182" r="11"/><circle cx="504" cy="182" r="11"/><circle cx="544" cy="182" r="11"/>
+    <circle cx="584" cy="182" r="11"/>
+  </g>
+
+  <!-- collecting tray with orifices -->
+  <rect x="202" y="208" width="396" height="18" fill="#eef2f7" stroke="#1f3a5f" stroke-width="2"/>
+  <g fill="#4a7fb5" opacity="0.45">
+    <rect x="210" y="210" width="150" height="6"/>
+    <rect x="440" y="210" width="150" height="6"/>
+  </g>
+  <g stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <line x1="248" y1="226" x2="248" y2="244"/><line x1="312" y1="226" x2="312" y2="244"/>
+    <line x1="488" y1="226" x2="488" y2="244"/><line x1="552" y1="226" x2="552" y2="244"/>
+  </g>
+
+  <!-- central downcomer -->
+  <rect x="368" y="226" width="64" height="86" fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2"/>
+  <rect x="372" y="232" width="56" height="74" fill="#4a7fb5" opacity="0.4"/>
+
+  <!-- two redistribution troughs -->
+  <g fill="#eef2f7" stroke="#1f3a5f" stroke-width="2">
+    <rect x="218" y="318" width="150" height="46"/>
+    <rect x="432" y="318" width="150" height="46"/>
+  </g>
+  <g fill="#4a7fb5" opacity="0.5">
+    <rect x="224" y="322" width="138" height="12"/>
+    <rect x="438" y="322" width="138" height="12"/>
+  </g>
+  <!-- flow from downcomer into troughs -->
+  <g stroke="#4a7fb5" stroke-width="2.2" stroke-linecap="round">
+    <line x1="366" y1="312" x2="330" y2="318"/><line x1="434" y1="312" x2="470" y2="318"/>
+  </g>
+
+  <!-- drip points -->
+  <g stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <line x1="246" y1="364" x2="246" y2="386"/><line x1="292" y1="364" x2="292" y2="386"/>
+    <line x1="338" y1="364" x2="338" y2="386"/>
+    <line x1="460" y1="364" x2="460" y2="386"/><line x1="506" y1="364" x2="506" y2="386"/>
+    <line x1="552" y1="364" x2="552" y2="386"/>
+  </g>
+  <g fill="#4a7fb5">
+    <circle cx="246" cy="394" r="3.4"/><circle cx="292" cy="394" r="3.4"/><circle cx="338" cy="394" r="3.4"/>
+    <circle cx="460" cy="394" r="3.4"/><circle cx="506" cy="394" r="3.4"/><circle cx="552" cy="394" r="3.4"/>
+  </g>
+
+  <!-- lower bed -->
+  <rect x="202" y="412" width="396" height="138" fill="#f7f9fb" stroke="#c3d0de" stroke-width="1"/>
+  <g stroke="#a9bacd" stroke-width="1.4" fill="none">
+    <circle cx="224" cy="438" r="11"/><circle cx="264" cy="438" r="11"/><circle cx="304" cy="438" r="11"/>
+    <circle cx="344" cy="438" r="11"/><circle cx="384" cy="438" r="11"/><circle cx="424" cy="438" r="11"/>
+    <circle cx="464" cy="438" r="11"/><circle cx="504" cy="438" r="11"/><circle cx="544" cy="438" r="11"/>
+    <circle cx="584" cy="438" r="11"/>
+    <circle cx="244" cy="466" r="11"/><circle cx="284" cy="466" r="11"/><circle cx="324" cy="466" r="11"/>
+    <circle cx="364" cy="466" r="11"/><circle cx="404" cy="466" r="11"/><circle cx="444" cy="466" r="11"/>
+    <circle cx="484" cy="466" r="11"/><circle cx="524" cy="466" r="11"/><circle cx="564" cy="466" r="11"/>
+    <circle cx="224" cy="494" r="11"/><circle cx="264" cy="494" r="11"/><circle cx="304" cy="494" r="11"/>
+    <circle cx="344" cy="494" r="11"/><circle cx="384" cy="494" r="11"/><circle cx="424" cy="494" r="11"/>
+    <circle cx="464" cy="494" r="11"/><circle cx="504" cy="494" r="11"/><circle cx="544" cy="494" r="11"/>
+    <circle cx="584" cy="494" r="11"/>
+    <circle cx="244" cy="522" r="11"/><circle cx="284" cy="522" r="11"/><circle cx="324" cy="522" r="11"/>
+    <circle cx="364" cy="522" r="11"/><circle cx="404" cy="522" r="11"/><circle cx="444" cy="522" r="11"/>
+    <circle cx="484" cy="522" r="11"/><circle cx="524" cy="522" r="11"/><circle cx="564" cy="522" r="11"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f3a5f">
+    <text x="176" y="120" text-anchor="end" font-weight="600">Bed above</text>
+    <line x1="182" y1="116" x2="200" y2="110" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="218" text-anchor="end" font-weight="600">Collecting tray</text>
+    <line x1="182" y1="214" x2="204" y2="216" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="240" text-anchor="end">Orifices drain down</text>
+    <line x1="182" y1="236" x2="244" y2="234" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="640" y="272" font-weight="600">Central</text>
+    <text x="640" y="288">downcomer</text>
+    <line x1="636" y1="278" x2="434" y2="272" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="344" text-anchor="end" font-weight="600">Redistribution troughs</text>
+    <line x1="182" y1="340" x2="216" y2="338" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="470" text-anchor="end" font-weight="600">Bed below</text>
+    <line x1="182" y1="466" x2="200" y2="460" stroke="#8a9aab" stroke-width="1"/>
+  </g>
+
+  <text x="400" y="584" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5b6a7c">
+    Without intermediate redistribution, wall flow started in the upper bed is carried straight into the lower bed
+  </text>
+</svg>

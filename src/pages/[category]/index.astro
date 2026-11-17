@@ -25,6 +25,11 @@ const items = itemsOf(cat.slug);
     <div class="grid">
       {items.map((p) => (
         <div class="card">
+          {p.image && (
+            <a class="card-media" href={`/${p.category}/${p.slug}/`} tabindex="-1" aria-hidden="true">
+              <img src={p.image} alt={p.name} width="400" height="300" loading="lazy" decoding="async" />
+            </a>
+          )}
           <h3><a href={`/${p.category}/${p.slug}/`}>{p.name}</a></h3>
           <p>{p.metaDescription.slice(0, 112)}…</p>
         </div>

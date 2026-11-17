@@ -19,6 +19,11 @@ import { INTERNALS } from '../../data/internals';
     <div class="grid">
       {INTERNALS.map((i) => (
         <div class="card">
+          {i.image && (
+            <a class="card-media" href={`/tower-internals/${i.slug}/`} tabindex="-1" aria-hidden="true">
+              <img src={i.image} alt={i.name} width="400" height="300" loading="lazy" decoding="async" />
+            </a>
+          )}
           <h3><a href={`/tower-internals/${i.slug}/`}>{i.name}</a></h3>
           <p>{i.metaDescription.slice(0, 112)}…</p>
         </div>

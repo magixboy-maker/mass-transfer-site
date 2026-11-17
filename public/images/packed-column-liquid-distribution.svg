@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Liquid distribution patterns across a packed bed</title>
+  <desc id="d2">Three cross-sections of a packed column showing uniform irrigation, channeling with a dry patch, and wall flow where liquid bypasses the centre.</desc>
+  <rect width="720" height="320" fill="#ffffff"/>
+
+  <defs>
+    <clipPath id="c1"><circle cx="130" cy="140" r="95"/></clipPath>
+    <clipPath id="c2"><circle cx="360" cy="140" r="95"/></clipPath>
+    <clipPath id="c3"><circle cx="590" cy="140" r="95"/></clipPath>
+  </defs>
+
+  <!-- 1. uniform -->
+  <circle cx="130" cy="140" r="95" fill="#f6f8fb" stroke="#b3c1d1" stroke-width="1.6"/>
+  <g clip-path="url(#c1)" stroke="#1f3a5f" stroke-width="2" stroke-linecap="round" opacity="0.75">
+    <line x1="45" y1="40" x2="45" y2="240"/><line x1="60" y1="40" x2="60" y2="240"/>
+    <line x1="75" y1="40" x2="75" y2="240"/><line x1="90" y1="40" x2="90" y2="240"/>
+    <line x1="105" y1="40" x2="105" y2="240"/><line x1="120" y1="40" x2="120" y2="240"/>
+    <line x1="135" y1="40" x2="135" y2="240"/><line x1="150" y1="40" x2="150" y2="240"/>
+    <line x1="165" y1="40" x2="165" y2="240"/><line x1="180" y1="40" x2="180" y2="240"/>
+    <line x1="195" y1="40" x2="195" y2="240"/><line x1="210" y1="40" x2="210" y2="240"/>
+  </g>
+  <text x="130" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1f3a5f">Uniform irrigation</text>
+  <text x="130" y="285" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6b63">full bed wetted, design efficiency</text>
+
+  <!-- 2. channeling -->
+  <circle cx="360" cy="140" r="95" fill="#f6f8fb" stroke="#b3c1d1" stroke-width="1.6"/>
+  <g clip-path="url(#c2)" stroke="#1f3a5f" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="290" y1="40" x2="290" y2="240"/><line x1="305" y1="40" x2="305" y2="240"/>
+    <line x1="320" y1="40" x2="320" y2="240"/>
+  </g>
+  <g clip-path="url(#c2)" stroke="#1f3a5f" stroke-width="3.4" stroke-linecap="round" opacity="0.9">
+    <line x1="332" y1="40" x2="332" y2="240"/><line x1="339" y1="40" x2="339" y2="240"/>
+  </g>
+  <rect x="386" y="138" width="66" height="19" rx="3" fill="#ffffff" opacity="0.95"/>
+  <text x="419" y="152" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#a8321b">dry patch</text>
+  <text x="360" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1f3a5f">Channeling</text>
+  <text x="360" y="285" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6b63">low &#916;P, poor efficiency, late flood</text>
+
+  <!-- 3. wall flow -->
+  <circle cx="590" cy="140" r="95" fill="#f6f8fb" stroke="#b3c1d1" stroke-width="1.6"/>
+  <g clip-path="url(#c3)" stroke="#1f3a5f" stroke-width="3.6" stroke-linecap="round" opacity="0.9">
+    <line x1="505" y1="40" x2="505" y2="240"/><line x1="513" y1="40" x2="513" y2="240"/>
+    <line x1="668" y1="40" x2="668" y2="240"/><line x1="676" y1="40" x2="676" y2="240"/>
+  </g>
+  <g clip-path="url(#c3)" stroke="#1f3a5f" stroke-width="2" stroke-linecap="round" opacity="0.28">
+    <line x1="545" y1="40" x2="545" y2="240"/><line x1="580" y1="40" x2="580" y2="240"/>
+    <line x1="615" y1="40" x2="615" y2="240"/>
+  </g>
+  <text x="590" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1f3a5f">Wall flow</text>
+  <text x="590" y="285" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6b63">liquid bypasses the centre of the bed</text>
+
+  <text x="360" y="24" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6b6b63">Cross-section of the packed bed, viewed from above &#8212; each line is a liquid stream</text>
+</svg>

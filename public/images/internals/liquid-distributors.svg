@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Cross-section of a trough liquid distributor above a packed bed">
+  <rect width="800" height="600" fill="#ffffff"/>
+
+  <!-- column shell -->
+  <line x1="200" y1="28" x2="200" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <line x1="600" y1="28" x2="600" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <g stroke="#b7c4d4" stroke-width="1">
+    <line x1="186" y1="40" x2="200" y2="54"/><line x1="186" y1="76" x2="200" y2="90"/>
+    <line x1="186" y1="112" x2="200" y2="126"/><line x1="186" y1="148" x2="200" y2="162"/>
+    <line x1="186" y1="184" x2="200" y2="198"/><line x1="186" y1="220" x2="200" y2="234"/>
+    <line x1="186" y1="256" x2="200" y2="270"/><line x1="186" y1="292" x2="200" y2="306"/>
+    <line x1="186" y1="328" x2="200" y2="342"/><line x1="186" y1="364" x2="200" y2="378"/>
+    <line x1="186" y1="400" x2="200" y2="414"/><line x1="186" y1="436" x2="200" y2="450"/>
+    <line x1="186" y1="472" x2="200" y2="486"/><line x1="186" y1="508" x2="200" y2="522"/>
+    <line x1="186" y1="544" x2="200" y2="558"/>
+    <line x1="614" y1="40" x2="600" y2="54"/><line x1="614" y1="76" x2="600" y2="90"/>
+    <line x1="614" y1="112" x2="600" y2="126"/><line x1="614" y1="148" x2="600" y2="162"/>
+    <line x1="614" y1="184" x2="600" y2="198"/><line x1="614" y1="220" x2="600" y2="234"/>
+    <line x1="614" y1="256" x2="600" y2="270"/><line x1="614" y1="292" x2="600" y2="306"/>
+    <line x1="614" y1="328" x2="600" y2="342"/><line x1="614" y1="364" x2="600" y2="378"/>
+    <line x1="614" y1="400" x2="600" y2="414"/><line x1="614" y1="436" x2="600" y2="450"/>
+    <line x1="614" y1="472" x2="600" y2="486"/><line x1="614" y1="508" x2="600" y2="522"/>
+    <line x1="614" y1="544" x2="600" y2="558"/>
+  </g>
+
+  <!-- feed pipe -->
+  <rect x="372" y="28" width="56" height="34" fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2"/>
+  <line x1="400" y1="62" x2="400" y2="104" stroke="#4a7fb5" stroke-width="5"/>
+
+  <!-- primary trough -->
+  <rect x="240" y="106" width="320" height="52" fill="#eef2f7" stroke="#1f3a5f" stroke-width="2"/>
+  <rect x="250" y="110" width="300" height="14" fill="#4a7fb5" opacity="0.5"/>
+
+  <!-- standpipes to distribution troughs -->
+  <g fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2">
+    <rect x="271" y="158" width="14" height="34"/>
+    <rect x="393" y="158" width="14" height="34"/>
+    <rect x="515" y="158" width="14" height="34"/>
+  </g>
+
+  <!-- three distribution troughs -->
+  <g fill="#eef2f7" stroke="#1f3a5f" stroke-width="2">
+    <rect x="218" y="192" width="112" height="48"/>
+    <rect x="344" y="192" width="112" height="48"/>
+    <rect x="470" y="192" width="112" height="48"/>
+  </g>
+  <g fill="#4a7fb5" opacity="0.5">
+    <rect x="224" y="196" width="100" height="12"/>
+    <rect x="350" y="196" width="100" height="12"/>
+    <rect x="476" y="196" width="100" height="12"/>
+  </g>
+
+  <!-- drip lines and drops -->
+  <g stroke="#4a7fb5" stroke-width="2.2" stroke-linecap="round">
+    <line x1="244" y1="240" x2="244" y2="266"/><line x1="274" y1="240" x2="274" y2="266"/><line x1="304" y1="240" x2="304" y2="266"/>
+    <line x1="370" y1="240" x2="370" y2="266"/><line x1="400" y1="240" x2="400" y2="266"/><line x1="430" y1="240" x2="430" y2="266"/>
+    <line x1="496" y1="240" x2="496" y2="266"/><line x1="526" y1="240" x2="526" y2="266"/><line x1="556" y1="240" x2="556" y2="266"/>
+  </g>
+  <g fill="#4a7fb5">
+    <circle cx="244" cy="274" r="3.4"/><circle cx="274" cy="274" r="3.4"/><circle cx="304" cy="274" r="3.4"/>
+    <circle cx="370" cy="274" r="3.4"/><circle cx="400" cy="274" r="3.4"/><circle cx="430" cy="274" r="3.4"/>
+    <circle cx="496" cy="274" r="3.4"/><circle cx="526" cy="274" r="3.4"/><circle cx="556" cy="274" r="3.4"/>
+  </g>
+
+  <!-- packing bed -->
+  <rect x="202" y="300" width="368" height="222" fill="#f7f9fb" stroke="#c3d0de" stroke-width="1"/>
+  <g stroke="#a9bacd" stroke-width="1.4" fill="none">
+    <circle cx="224" cy="322" r="11"/><circle cx="264" cy="322" r="11"/><circle cx="304" cy="322" r="11"/>
+    <circle cx="344" cy="322" r="11"/><circle cx="384" cy="322" r="11"/><circle cx="424" cy="322" r="11"/>
+    <circle cx="464" cy="322" r="11"/><circle cx="504" cy="322" r="11"/><circle cx="544" cy="322" r="11"/>
+    <circle cx="244" cy="350" r="11"/><circle cx="284" cy="350" r="11"/><circle cx="324" cy="350" r="11"/>
+    <circle cx="364" cy="350" r="11"/><circle cx="404" cy="350" r="11"/><circle cx="444" cy="350" r="11"/>
+    <circle cx="484" cy="350" r="11"/><circle cx="524" cy="350" r="11"/>
+    <circle cx="224" cy="378" r="11"/><circle cx="264" cy="378" r="11"/><circle cx="304" cy="378" r="11"/>
+    <circle cx="344" cy="378" r="11"/><circle cx="384" cy="378" r="11"/><circle cx="424" cy="378" r="11"/>
+    <circle cx="464" cy="378" r="11"/><circle cx="504" cy="378" r="11"/><circle cx="544" cy="378" r="11"/>
+    <circle cx="244" cy="406" r="11"/><circle cx="284" cy="406" r="11"/><circle cx="324" cy="406" r="11"/>
+    <circle cx="364" cy="406" r="11"/><circle cx="404" cy="406" r="11"/><circle cx="444" cy="406" r="11"/>
+    <circle cx="484" cy="406" r="11"/><circle cx="524" cy="406" r="11"/>
+    <circle cx="224" cy="434" r="11"/><circle cx="264" cy="434" r="11"/><circle cx="304" cy="434" r="11"/>
+    <circle cx="344" cy="434" r="11"/><circle cx="384" cy="434" r="11"/><circle cx="424" cy="434" r="11"/>
+    <circle cx="464" cy="434" r="11"/><circle cx="504" cy="434" r="11"/><circle cx="544" cy="434" r="11"/>
+    <circle cx="244" cy="462" r="11"/><circle cx="284" cy="462" r="11"/><circle cx="324" cy="462" r="11"/>
+    <circle cx="364" cy="462" r="11"/><circle cx="404" cy="462" r="11"/><circle cx="444" cy="462" r="11"/>
+    <circle cx="484" cy="462" r="11"/><circle cx="524" cy="462" r="11"/>
+    <circle cx="224" cy="490" r="11"/><circle cx="264" cy="490" r="11"/><circle cx="304" cy="490" r="11"/>
+    <circle cx="344" cy="490" r="11"/><circle cx="384" cy="490" r="11"/><circle cx="424" cy="490" r="11"/>
+    <circle cx="464" cy="490" r="11"/><circle cx="504" cy="490" r="11"/><circle cx="544" cy="490" r="11"/>
+  </g>
+
+  <!-- gas upflow arrow inside column -->
+  <g stroke="#8a9aab" stroke-width="1.6" fill="none">
+    <line x1="588" y1="548" x2="588" y2="300"/>
+    <path d="M582 312 L588 300 L594 312"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f3a5f">
+    <text x="176" y="52" text-anchor="end" font-weight="600">Liquid feed</text>
+    <line x1="182" y1="48" x2="370" y2="46" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="136" text-anchor="end" font-weight="600">Primary trough</text>
+    <line x1="182" y1="132" x2="238" y2="130" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="222" text-anchor="end" font-weight="600">Distribution trough</text>
+    <line x1="182" y1="218" x2="216" y2="216" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="278" text-anchor="end">Orifice / drip point</text>
+    <line x1="182" y1="274" x2="240" y2="274" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="404" text-anchor="end" font-weight="600">Packing bed</text>
+    <line x1="182" y1="400" x2="200" y2="392" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="640" y="404">Gas upflow</text>
+    <text x="640" y="420" fill="#5b6a7c">through the bed</text>
+  </g>
+
+  <text x="400" y="584" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5b6a7c">
+    Trough distributor: troughs set truly level and correctly sized orifices decide how evenly liquid reaches the bed
+  </text>
+</svg>

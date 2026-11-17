@@ -42,6 +42,15 @@ const faqSchema = {
 >
   <div class="wrap">
     <h1 class="page-title">{item.h1}</h1>
+    {item.image && (
+      <img
+        src={item.image}
+        alt={item.h1}
+        style="max-width:560px;width:100%;border:1px solid var(--border);border-radius:8px;margin-bottom:24px;background:#fff;"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
     <p class="page-sub">{item.intro}</p>
 
     <article class="prose">

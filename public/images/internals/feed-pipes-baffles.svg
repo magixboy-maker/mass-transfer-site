@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Cross-section of a side feed nozzle with an impingement baffle above a packed bed">
+  <rect width="800" height="600" fill="#ffffff"/>
+
+  <!-- column shell -->
+  <line x1="200" y1="28" x2="200" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <line x1="600" y1="28" x2="600" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <g stroke="#b7c4d4" stroke-width="1">
+    <line x1="186" y1="40" x2="200" y2="54"/><line x1="186" y1="76" x2="200" y2="90"/>
+    <line x1="186" y1="112" x2="200" y2="126"/><line x1="186" y1="148" x2="200" y2="162"/>
+    <line x1="186" y1="184" x2="200" y2="198"/><line x1="186" y1="220" x2="200" y2="234"/>
+    <line x1="186" y1="256" x2="200" y2="270"/><line x1="186" y1="292" x2="200" y2="306"/>
+    <line x1="186" y1="328" x2="200" y2="342"/><line x1="186" y1="364" x2="200" y2="378"/>
+    <line x1="186" y1="400" x2="200" y2="414"/><line x1="186" y1="436" x2="200" y2="450"/>
+    <line x1="186" y1="472" x2="200" y2="486"/><line x1="186" y1="508" x2="200" y2="522"/>
+    <line x1="186" y1="544" x2="200" y2="558"/>
+    <line x1="614" y1="40" x2="600" y2="54"/><line x1="614" y1="76" x2="600" y2="90"/>
+    <line x1="614" y1="112" x2="600" y2="126"/><line x1="614" y1="148" x2="600" y2="162"/>
+    <line x1="614" y1="184" x2="600" y2="198"/><line x1="614" y1="220" x2="600" y2="234"/>
+    <line x1="614" y1="256" x2="600" y2="270"/><line x1="614" y1="292" x2="600" y2="306"/>
+    <line x1="614" y1="328" x2="600" y2="342"/><line x1="614" y1="364" x2="600" y2="378"/>
+    <line x1="614" y1="400" x2="600" y2="414"/><line x1="614" y1="436" x2="600" y2="450"/>
+    <line x1="614" y1="472" x2="600" y2="486"/><line x1="614" y1="508" x2="600" y2="522"/>
+    <line x1="614" y1="544" x2="600" y2="558"/>
+  </g>
+
+  <!-- feed nozzle through the shell -->
+  <rect x="96" y="176" width="168" height="52" fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2"/>
+  <rect x="100" y="182" width="160" height="40" fill="#4a7fb5" opacity="0.45"/>
+  <line x1="264" y1="176" x2="264" y2="228" stroke="#1f3a5f" stroke-width="2"/>
+
+  <!-- impingement baffle -->
+  <path d="M296 122 L320 138 L320 282 L296 298 Z" fill="#cfdbe8" stroke="#1f3a5f" stroke-width="2"/>
+  <line x1="296" y1="122" x2="296" y2="298" stroke="#1f3a5f" stroke-width="3"/>
+  <!-- bracket -->
+
+  <!-- jet from nozzle to baffle -->
+  <g stroke="#4a7fb5" stroke-width="4" stroke-linecap="round">
+    <line x1="268" y1="202" x2="290" y2="202"/>
+  </g>
+  <path d="M286 194 L298 202 L286 210" fill="none" stroke="#4a7fb5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- deflected flow -->
+  <g stroke="#4a7fb5" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M320 200 Q356 196 380 214"/>
+    <path d="M320 226 Q350 238 366 264"/>
+    <path d="M312 168 Q344 148 372 156"/>
+  </g>
+  <g fill="#4a7fb5">
+    <circle cx="390" cy="220" r="3.2"/><circle cx="374" cy="272" r="3.2"/><circle cx="382" cy="152" r="3.2"/>
+    <circle cx="404" cy="234" r="2.6"/><circle cx="388" cy="290" r="2.6"/>
+  </g>
+
+  <!-- packing bed -->
+  <rect x="202" y="336" width="396" height="212" fill="#f7f9fb" stroke="#c3d0de" stroke-width="1"/>
+  <g stroke="#a9bacd" stroke-width="1.4" fill="none">
+    <circle cx="224" cy="362" r="11"/><circle cx="264" cy="362" r="11"/><circle cx="304" cy="362" r="11"/>
+    <circle cx="344" cy="362" r="11"/><circle cx="384" cy="362" r="11"/><circle cx="424" cy="362" r="11"/>
+    <circle cx="464" cy="362" r="11"/><circle cx="504" cy="362" r="11"/><circle cx="544" cy="362" r="11"/>
+    <circle cx="584" cy="362" r="11"/>
+    <circle cx="244" cy="390" r="11"/><circle cx="284" cy="390" r="11"/><circle cx="324" cy="390" r="11"/>
+    <circle cx="364" cy="390" r="11"/><circle cx="404" cy="390" r="11"/><circle cx="444" cy="390" r="11"/>
+    <circle cx="484" cy="390" r="11"/><circle cx="524" cy="390" r="11"/><circle cx="564" cy="390" r="11"/>
+    <circle cx="224" cy="418" r="11"/><circle cx="264" cy="418" r="11"/><circle cx="304" cy="418" r="11"/>
+    <circle cx="344" cy="418" r="11"/><circle cx="384" cy="418" r="11"/><circle cx="424" cy="418" r="11"/>
+    <circle cx="464" cy="418" r="11"/><circle cx="504" cy="418" r="11"/><circle cx="544" cy="418" r="11"/>
+    <circle cx="584" cy="418" r="11"/>
+    <circle cx="244" cy="446" r="11"/><circle cx="284" cy="446" r="11"/><circle cx="324" cy="446" r="11"/>
+    <circle cx="364" cy="446" r="11"/><circle cx="404" cy="446" r="11"/><circle cx="444" cy="446" r="11"/>
+    <circle cx="484" cy="446" r="11"/><circle cx="524" cy="446" r="11"/><circle cx="564" cy="446" r="11"/>
+    <circle cx="224" cy="474" r="11"/><circle cx="264" cy="474" r="11"/><circle cx="304" cy="474" r="11"/>
+    <circle cx="344" cy="474" r="11"/><circle cx="384" cy="474" r="11"/><circle cx="424" cy="474" r="11"/>
+    <circle cx="464" cy="474" r="11"/><circle cx="504" cy="474" r="11"/><circle cx="544" cy="474" r="11"/>
+    <circle cx="584" cy="474" r="11"/>
+    <circle cx="244" cy="502" r="11"/><circle cx="284" cy="502" r="11"/><circle cx="324" cy="502" r="11"/>
+    <circle cx="364" cy="502" r="11"/><circle cx="404" cy="502" r="11"/><circle cx="444" cy="502" r="11"/>
+    <circle cx="484" cy="502" r="11"/><circle cx="524" cy="502" r="11"/><circle cx="564" cy="502" r="11"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f3a5f">
+    <text x="96" y="152" font-weight="600">Feed nozzle</text>
+    <line x1="108" y1="158" x2="132" y2="172" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="470" y="128" font-weight="600">Impingement baffle</text>
+    <line x1="466" y1="124" x2="320" y2="128" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="470" y="212">Deflected flow</text>
+    <line x1="466" y1="208" x2="396" y2="218" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="430" text-anchor="end" font-weight="600">Packing bed</text>
+    <line x1="182" y1="426" x2="200" y2="420" stroke="#8a9aab" stroke-width="1"/>
+
+
+  </g>
+
+  <text x="400" y="584" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5b6a7c">
+    A feed jet hitting the bed directly cuts a channel in the top layer — the baffle spreads it before it lands
+  </text>
+</svg>

@@ -144,7 +144,7 @@ export const CERAMIC_BALLS: Product[] = [
   {
     slug: 'grinding-ball',
     image: '/images/products/grinding-ball.webp',
-    name: 'Grinding Ball',
+    name: 'Alumina Grinding Ball',
     title: 'Alumina Grinding Ball | Wear Resistant Ceramic Mill Media',
     h1: 'Alumina Grinding Balls',
     metaDescription:
@@ -187,6 +187,7 @@ export const CERAMIC_BALLS: Product[] = [
   },
   {
     slug: 'refractory-ball',
+    image: '/images/products/refractory-ball.webp',
     name: 'Refractory Ball',
     title: 'Refractory Ceramic Ball | Heat Storage and High Temperature Media',
     h1: 'Refractory Balls & Heat Storage Media',

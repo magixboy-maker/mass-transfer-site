@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Pressure drop versus gas load for a packed column</title>
+  <desc id="d1">Chart showing the loading point and the flooding point on a pressure drop curve, with the curves shifted by foaming and channeling.</desc>
+  <rect width="720" height="440" fill="#ffffff"/>
+
+  <!-- flooded region -->
+  <rect x="486.7" y="40" width="203.3" height="320" fill="#fdf0ec"/>
+  <!-- plot background -->
+  <rect x="80" y="40" width="610" height="320" fill="none"/>
+
+  <!-- grid -->
+  <g stroke="#e8e8e2" stroke-width="1">
+    <line x1="80" y1="306.7" x2="690" y2="306.7"/>
+    <line x1="80" y1="253.3" x2="690" y2="253.3"/>
+    <line x1="80" y1="200" x2="690" y2="200"/>
+    <line x1="80" y1="146.7" x2="690" y2="146.7"/>
+    <line x1="80" y1="93.3" x2="690" y2="93.3"/>
+    <line x1="181.7" y1="40" x2="181.7" y2="360"/>
+    <line x1="283.3" y1="40" x2="283.3" y2="360"/>
+    <line x1="385" y1="40" x2="385" y2="360"/>
+    <line x1="486.7" y1="40" x2="486.7" y2="360"/>
+    <line x1="588.3" y1="40" x2="588.3" y2="360"/>
+  </g>
+
+  <!-- axes -->
+  <g stroke="#33332e" stroke-width="1.5" fill="none">
+    <line x1="80" y1="359.5" x2="690" y2="359.5"/>
+    <line x1="80.5" y1="360" x2="80.5" y2="40"/>
+  </g>
+
+  <!-- ticks -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6b63" text-anchor="end">
+    <text x="70" y="364">0</text>
+    <text x="70" y="310.7">2</text>
+    <text x="70" y="257.3">4</text>
+    <text x="70" y="204">6</text>
+    <text x="70" y="150.7">8</text>
+    <text x="70" y="97.3">10</text>
+    <text x="70" y="44">12</text>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6b63" text-anchor="middle">
+    <text x="80" y="378">0.5</text>
+    <text x="181.7" y="378">1.0</text>
+    <text x="283.3" y="378">1.5</text>
+    <text x="385" y="378">2.0</text>
+    <text x="486.7" y="378">2.5</text>
+    <text x="588.3" y="378">3.0</text>
+    <text x="690" y="378">3.5</text>
+  </g>
+
+  <!-- axis titles -->
+  <text x="385" y="408" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#33332e">Gas load factor F (Pa&#8304;&#183;&#8309;) &#8212; rises with vapour velocity</text>
+  <text x="0" y="0" transform="translate(24,200) rotate(-90)" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#33332e">Pressure drop, mbar per metre of bed</text>
+
+  <!-- curves -->
+  <path d="M80 346 L130 339 C160 335 165 335 182 333 C215 329 250 322 283 317 C320 311 350 301 385 291 C410 283 430 273 452 261 C480 246 500 225 520 193 C535 168 552 130 564 100"
+        fill="none" stroke="#1f3a5f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M80 336 C140 328 180 320 230 308 C280 296 330 281 380 264 C415 251 440 238 462 218 C478 202 492 178 500 148 C505 128 510 100 516 70"
+        fill="none" stroke="#c2410c" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round"/>
+  <path d="M80 350 C150 344 200 340 260 336 C320 331 380 325 430 316 C480 306 520 289 552 262 C572 245 590 220 604 190 C612 170 618 145 624 118"
+        fill="none" stroke="#0f766e" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round"/>
+
+  <!-- loading point -->
+  <line x1="385" y1="291" x2="385" y2="360" stroke="#1f3a5f" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+  <circle cx="385" cy="291" r="4.5" fill="#ffffff" stroke="#1f3a5f" stroke-width="2"/>
+  <line x1="322" y1="262" x2="381" y2="287" stroke="#8a8a80" stroke-width="1"/>
+  <text x="318" y="256" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1f3a5f">Loading point</text>
+
+  <!-- flooding point -->
+  <line x1="530" y1="180" x2="530" y2="360" stroke="#a8321b" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+  <circle cx="530" cy="180" r="4.5" fill="#a8321b" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="546" y1="226" x2="534" y2="186" stroke="#b08a7a" stroke-width="1"/>
+  <text x="552" y="232" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#a8321b">Flooding point</text>
+  <text x="552" y="249" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#8a5a4a">hydraulic limit of the bed</text>
+
+  <!-- design line -->
+  <line x1="486.7" y1="40" x2="486.7" y2="360" stroke="#8a8a80" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="492" y="56" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6b6b63">design margin 70&#8211;80% of flood</text>
+
+  <!-- legend -->
+  <rect x="92" y="56" width="198" height="66" fill="#ffffff" stroke="#ddDDD5" stroke-width="1" rx="3"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#33332e">
+    <line x1="100" y1="72" x2="126" y2="72" stroke="#1f3a5f" stroke-width="2.6"/>
+    <text x="132" y="76">Normal bed, good distribution</text>
+    <line x1="100" y1="91" x2="126" y2="91" stroke="#c2410c" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="132" y="95">Foaming, high liquid holdup</text>
+    <line x1="100" y1="110" x2="126" y2="110" stroke="#0f766e" stroke-width="2" stroke-dasharray="3 4"/>
+    <text x="132" y="114">Channeling, dry patches</text>
+  </g>
+</svg>

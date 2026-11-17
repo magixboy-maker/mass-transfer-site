@@ -3,6 +3,7 @@
 
 export interface Internal {
   slug: string;
+  image: string;
   name: string;
   title: string;
   h1: string;
@@ -21,6 +22,7 @@ export interface Internal {
 export const INTERNALS: Internal[] = [
   {
     slug: 'liquid-distributors',
+    image: '/images/internals/liquid-distributors.svg',
     name: 'Liquid Distributors',
     title: 'Liquid Distributor Manufacturer | Trough, Orifice & Spray Distributors',
     h1: 'Liquid Distributors for Packed Columns',
@@ -92,6 +94,7 @@ export const INTERNALS: Internal[] = [
   },
   {
     slug: 'support-plates',
+    image: '/images/internals/support-plates.svg',
     name: 'Support Plates',
     title: 'Packing Support Plate Manufacturer | Column Support Grids & Plates',
     h1: 'Support Plates & Support Grids for Packed Beds',
@@ -169,6 +172,7 @@ export const INTERNALS: Internal[] = [
   },
   {
     slug: 'redistributors',
+    image: '/images/internals/redistributors.svg',
     name: 'Redistributors',
     title: 'Liquid Redistributor Manufacturer | Collector & Chimney Tray Redistributors',
     h1: 'Liquid Redistributors for Deep Packed Beds',
@@ -240,6 +244,7 @@ export const INTERNALS: Internal[] = [
   },
   {
     slug: 'demister-supports',
+    image: '/images/internals/demister-supports.svg',
     name: 'Demister Supports',
     title: 'Demister Support Grids & Hold-Down Bars | Mist Eliminator Supports',
     h1: 'Demister Supports, Grids & Hold-Down Bars',
@@ -316,6 +321,7 @@ export const INTERNALS: Internal[] = [
   },
   {
     slug: 'feed-pipes-baffles',
+    image: '/images/internals/feed-pipes-baffles.svg',
     name: 'Feed Pipes & Baffles',
     title: 'Column Inlet Baffles & Feed Pipes | Impingement Protection',
     h1: 'Feed Pipes, Inlet Devices & Impingement Baffles',

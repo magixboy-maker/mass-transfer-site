@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Cross-section of a packing support plate carrying a random packing bed">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <defs>
+    <pattern id="mesh2" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 7 H14 M7 0 V14" stroke="#b8c6d6" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- column shell -->
+  <line x1="200" y1="28" x2="200" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <line x1="600" y1="28" x2="600" y2="560" stroke="#1f3a5f" stroke-width="3"/>
+  <g stroke="#b7c4d4" stroke-width="1">
+    <line x1="186" y1="40" x2="200" y2="54"/><line x1="186" y1="76" x2="200" y2="90"/>
+    <line x1="186" y1="112" x2="200" y2="126"/><line x1="186" y1="148" x2="200" y2="162"/>
+    <line x1="186" y1="184" x2="200" y2="198"/><line x1="186" y1="220" x2="200" y2="234"/>
+    <line x1="186" y1="256" x2="200" y2="270"/><line x1="186" y1="292" x2="200" y2="306"/>
+    <line x1="186" y1="328" x2="200" y2="342"/><line x1="186" y1="364" x2="200" y2="378"/>
+    <line x1="186" y1="400" x2="200" y2="414"/><line x1="186" y1="436" x2="200" y2="450"/>
+    <line x1="186" y1="472" x2="200" y2="486"/><line x1="186" y1="508" x2="200" y2="522"/>
+    <line x1="186" y1="544" x2="200" y2="558"/>
+    <line x1="614" y1="40" x2="600" y2="54"/><line x1="614" y1="76" x2="600" y2="90"/>
+    <line x1="614" y1="112" x2="600" y2="126"/><line x1="614" y1="148" x2="600" y2="162"/>
+    <line x1="614" y1="184" x2="600" y2="198"/><line x1="614" y1="220" x2="600" y2="234"/>
+    <line x1="614" y1="256" x2="600" y2="270"/><line x1="614" y1="292" x2="600" y2="306"/>
+    <line x1="614" y1="328" x2="600" y2="342"/><line x1="614" y1="364" x2="600" y2="378"/>
+    <line x1="614" y1="400" x2="600" y2="414"/><line x1="614" y1="436" x2="600" y2="450"/>
+    <line x1="614" y1="472" x2="600" y2="486"/><line x1="614" y1="508" x2="600" y2="522"/>
+    <line x1="614" y1="544" x2="600" y2="558"/>
+  </g>
+
+  <!-- packing bed above the plate -->
+  <g stroke="#a9bacd" stroke-width="1.4" fill="none">
+    <circle cx="224" cy="86" r="11"/><circle cx="264" cy="86" r="11"/><circle cx="304" cy="86" r="11"/>
+    <circle cx="344" cy="86" r="11"/><circle cx="384" cy="86" r="11"/><circle cx="424" cy="86" r="11"/>
+    <circle cx="464" cy="86" r="11"/><circle cx="504" cy="86" r="11"/><circle cx="544" cy="86" r="11"/>
+    <circle cx="244" cy="114" r="11"/><circle cx="284" cy="114" r="11"/><circle cx="324" cy="114" r="11"/>
+    <circle cx="364" cy="114" r="11"/><circle cx="404" cy="114" r="11"/><circle cx="444" cy="114" r="11"/>
+    <circle cx="484" cy="114" r="11"/><circle cx="524" cy="114" r="11"/><circle cx="564" cy="114" r="11"/>
+    <circle cx="224" cy="142" r="11"/><circle cx="264" cy="142" r="11"/><circle cx="304" cy="142" r="11"/>
+    <circle cx="344" cy="142" r="11"/><circle cx="384" cy="142" r="11"/><circle cx="424" cy="142" r="11"/>
+    <circle cx="464" cy="142" r="11"/><circle cx="504" cy="142" r="11"/><circle cx="544" cy="142" r="11"/>
+    <circle cx="244" cy="170" r="11"/><circle cx="284" cy="170" r="11"/><circle cx="324" cy="170" r="11"/>
+    <circle cx="364" cy="170" r="11"/><circle cx="404" cy="170" r="11"/><circle cx="444" cy="170" r="11"/>
+    <circle cx="484" cy="170" r="11"/><circle cx="524" cy="170" r="11"/><circle cx="564" cy="170" r="11"/>
+    <circle cx="224" cy="198" r="11"/><circle cx="264" cy="198" r="11"/><circle cx="304" cy="198" r="11"/>
+    <circle cx="344" cy="198" r="11"/><circle cx="384" cy="198" r="11"/><circle cx="424" cy="198" r="11"/>
+    <circle cx="464" cy="198" r="11"/><circle cx="504" cy="198" r="11"/><circle cx="544" cy="198" r="11"/>
+    <circle cx="244" cy="226" r="11"/><circle cx="284" cy="226" r="11"/><circle cx="324" cy="226" r="11"/>
+    <circle cx="364" cy="226" r="11"/><circle cx="404" cy="226" r="11"/><circle cx="444" cy="226" r="11"/>
+    <circle cx="484" cy="226" r="11"/><circle cx="524" cy="226" r="11"/><circle cx="564" cy="226" r="11"/>
+    <circle cx="224" cy="254" r="11"/><circle cx="264" cy="254" r="11"/><circle cx="304" cy="254" r="11"/>
+    <circle cx="344" cy="254" r="11"/><circle cx="384" cy="254" r="11"/><circle cx="424" cy="254" r="11"/>
+    <circle cx="464" cy="254" r="11"/><circle cx="504" cy="254" r="11"/><circle cx="544" cy="254" r="11"/>
+  </g>
+
+  <!-- support ring welded to the shell -->
+  <rect x="200" y="286" width="34" height="24" fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2"/>
+  <rect x="566" y="286" width="34" height="24" fill="#dfe7f1" stroke="#1f3a5f" stroke-width="2"/>
+
+  <!-- main beam -->
+  <rect x="232" y="292" width="336" height="14" fill="#cfdbe8" stroke="#1f3a5f" stroke-width="1.6"/>
+
+  <!-- grating bars -->
+  <g stroke="#1f3a5f" stroke-width="1.6">
+    <line x1="252" y1="306" x2="252" y2="330"/><line x1="292" y1="306" x2="292" y2="330"/>
+    <line x1="332" y1="306" x2="332" y2="330"/><line x1="372" y1="306" x2="372" y2="330"/>
+    <line x1="412" y1="306" x2="412" y2="330"/><line x1="452" y1="306" x2="452" y2="330"/>
+    <line x1="492" y1="306" x2="492" y2="330"/><line x1="532" y1="306" x2="532" y2="330"/>
+  </g>
+  <rect x="232" y="330" width="336" height="10" fill="url(#mesh2)" stroke="#1f3a5f" stroke-width="1.4"/>
+
+  <!-- gas upflow arrows -->
+  <g stroke="#8a9aab" stroke-width="1.6" fill="none">
+    <line x1="300" y1="530" x2="300" y2="356"/><path d="M294 366 L300 354 L306 366"/>
+    <line x1="400" y1="530" x2="400" y2="356"/><path d="M394 366 L400 354 L406 366"/>
+    <line x1="500" y1="530" x2="500" y2="356"/><path d="M494 366 L500 354 L506 366"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#1f3a5f">
+    <text x="176" y="150" text-anchor="end" font-weight="600">Packing bed</text>
+    <line x1="182" y1="146" x2="200" y2="140" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="292" text-anchor="end" font-weight="600">Support ring</text>
+    <line x1="182" y1="288" x2="206" y2="292" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="316" text-anchor="end">Main beam</text>
+    <line x1="182" y1="312" x2="234" y2="299" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="352" text-anchor="end" font-weight="600">Grating / grid</text>
+    <line x1="182" y1="348" x2="232" y2="336" stroke="#8a9aab" stroke-width="1"/>
+
+    <text x="176" y="440" text-anchor="end">Gas inlet space</text>
+    <line x1="182" y1="436" x2="286" y2="428" stroke="#8a9aab" stroke-width="1"/>
+  </g>
+
+  <text x="400" y="584" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5b6a7c">
+    The plate carries the bed weight and passes gas with minimum pressure drop — free area matters as much as strength
+  </text>
+</svg>

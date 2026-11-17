@@ -12,6 +12,21 @@ export function getStaticPaths() {
 const { product } = Astro.props;
 const catLabel = product.category === 'random-packing' ? 'Random Packing' : product.category === 'structured-packing' ? 'Structured Packing' : 'Mist Eliminators';
 
+// 相关产品：Raschig 系列走 hub & spoke 结构，其余保留默认
+const RELATED: Record<string, string[]> = {
+  'raschig-ring': ['super-raschig-ring', 'cascade-mini-ring', 'imtp-equivalent'],
+  'raschig-ring-metal': ['raschig-ring-plastic', 'raschig-ring-ceramic', 'pall-ring-metal'],
+  'raschig-ring-plastic': ['raschig-ring-metal', 'raschig-ring-ceramic', 'pall-ring-plastic'],
+  'raschig-ring-ceramic': ['raschig-ring-plastic', 'raschig-ring-metal', 'pall-ring-ceramic'],
+};
+const relatedSlugs =
+  RELATED[product.slug] ??
+  (product.category === 'random-packing'
+    ? ['raschig-ring', 'cascade-mini-ring', 'imtp-equivalent']
+    : product.category === 'structured-packing'
+      ? ['wire-mesh', 'corrugated-sheet', 'plastic-structured']
+      : ['wire-mesh-pad', 'vane-type', 'blade-type']);
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -79,8 +94,22 @@ const faqSchema = {
       <p>{product.comparison}</p>
     </article>
 
+    {product.variants && (
+      <section style="margin-top:36px;">
+        <h2>Choose the right material</h2>
+        <div class="grid">
+          {product.variants.map((v) => (
+            <div class="card">
+              <h3><a href={v.href}>{v.label}</a></h3>
+              <p>{v.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
     <Faq faqs={product.faqs} />
-    <RelatedProducts slugs={product.category === 'random-packing' ? ['raschig-ring','cascade-mini-ring','imtp-equivalent'] : product.category === 'structured-packing' ? ['wire-mesh','corrugated-sheet','plastic-structured'] : ['wire-mesh-pad','vane-type','blade-type']} />
+    <RelatedProducts slugs={relatedSlugs} />
     <Cta heading={`Get a quote for ${product.name}`} />
   </div>
 </Layout>

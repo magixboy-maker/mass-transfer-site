@@ -2,7 +2,74 @@
 import Layout from '../layouts/Layout.astro';
 import { SITE, NAV } from '../data/site';
 import { PRODUCTS } from '../data/products';
+import { CATALOG } from '../data/catalog';
 import { APPLICATIONS } from '../data/applications';
+
+// 首页精选：每个品类挑一个，让访客在首屏下方就能看到瓷球、研磨球、分子筛
+const ALL_PRODUCTS = [...PRODUCTS, ...CATALOG];
+const FEATURED_SLUGS = [
+  'pall-ring-ceramic',
+  'corrugated-sheet',
+  'wire-mesh-pad',
+  'high-alumina-ball',
+  'grinding-ball',
+  'molecular-sieve-13x',
+];
+const FEATURED = FEATURED_SLUGS.map((s) => ALL_PRODUCTS.find((p) => p.slug === s)).filter(
+  (p): p is NonNullable<typeof p> => Boolean(p)
+);
+
+// 首页分类卡片：每个分类配一张代表图
+const CATEGORY_CARDS = [
+  {
+    href: '/random-packing/',
+    name: 'Random Packing',
+    desc: 'Pall rings, Raschig rings, Cascade Mini Rings, saddles and Tri-Pack in metal, plastic and ceramic.',
+    img: '/images/products/pall-ring-metal.webp',
+  },
+  {
+    href: '/structured-packing/',
+    name: 'Structured Packing',
+    desc: 'Wire mesh and corrugated sheet packing for high-efficiency distillation, absorption and CO₂ capture.',
+    img: '/images/products/plastic-structured.webp',
+  },
+  {
+    href: '/mist-eliminator/',
+    name: 'Mist Eliminators',
+    desc: 'Wire mesh pads, vane and blade separators to remove entrained liquid droplets from gas streams.',
+    img: '/images/products/vane-type.webp',
+  },
+  {
+    href: '/tower-internals/',
+    name: 'Tower Internals',
+    desc: 'Liquid distributors, support plates and demisters matched to your column for reliable performance.',
+    img: '/images/internals/support-plates.svg',
+  },
+  {
+    href: '/ceramic-balls/',
+    name: 'Ceramic Balls',
+    desc: 'Inert alumina, high alumina, porous and refractory balls for catalyst bed support and flow distribution.',
+    img: '/images/products/inert-alumina-ceramic-ball.webp',
+  },
+  {
+    href: '/adsorbents/',
+    name: 'Adsorbents & Desiccants',
+    desc: 'Activated alumina and molecular sieve 3A, 4A, 5A and 13X for drying and gas purification.',
+    img: '/images/products/molecular-sieve-3a.webp',
+  },
+  {
+    href: '/filter-media/',
+    name: 'Filter Media',
+    desc: 'Ceramic sand and ceramsite media for potable water, wastewater and biofiltration.',
+    img: '/images/products/ceramsite-filter-media.webp',
+  },
+  {
+    href: '/honeycomb-ceramics/',
+    name: 'Honeycomb Ceramics',
+    desc: 'Ceramic honeycomb media for RTO heat exchange and cordierite wall-flow DPF substrates.',
+    img: '/images/products/dpf-cordierite-honeycomb.webp',
+  },
+];
 ---
 
 <Layout
@@ -30,46 +97,28 @@ import { APPLICATIONS } from '../data/applications';
     <section style="margin-top:40px;">
       <h2>Packing Categories</h2>
       <div class="grid">
-        <div class="card">
-          <h3><a href="/random-packing/">Random Packing</a></h3>
-          <p>Pall rings, Raschig rings, Cascade Mini Rings, saddles and Tri-Pack in metal, plastic and ceramic.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/structured-packing/">Structured Packing</a></h3>
-          <p>Wire mesh and corrugated sheet packing for high-efficiency distillation, absorption and CO₂ capture.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/mist-eliminator/">Mist Eliminators</a></h3>
-          <p>Wire mesh pads, vane and blade separators to remove entrained liquid droplets from gas streams.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/tower-internals/">Tower Internals</a></h3>
-          <p>Liquid distributors, support plates and demisters matched to your column for reliable performance.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/ceramic-balls/">Ceramic Balls</a></h3>
-          <p>Inert alumina, high alumina, porous and refractory balls for catalyst bed support and flow distribution.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/adsorbents/">Adsorbents &amp; Desiccants</a></h3>
-          <p>Activated alumina and molecular sieve 3A, 4A, 5A and 13X for drying and gas purification.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/filter-media/">Filter Media</a></h3>
-          <p>Ceramic sand and ceramsite media for potable water, wastewater and biofiltration.</p>
-        </div>
-        <div class="card">
-          <h3><a href="/honeycomb-ceramics/">Honeycomb Ceramics</a></h3>
-          <p>Ceramic honeycomb media for RTO heat exchange and cordierite wall-flow DPF substrates.</p>
-        </div>
+        {CATEGORY_CARDS.map((c) => (
+          <div class="card">
+            <a class="card-media" href={c.href} tabindex="-1" aria-hidden="true">
+              <img src={c.img} alt={c.name} width="400" height="300" loading="lazy" decoding="async" />
+            </a>
+            <h3><a href={c.href}>{c.name}</a></h3>
+            <p>{c.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
 
     <section style="margin-top:44px;">
       <h2>Featured Products</h2>
       <div class="grid">
-        {PRODUCTS.filter(p => ['pall-ring-metal','pall-ring-plastic','pall-ring-ceramic','wire-mesh','corrugated-sheet','wire-mesh-pad'].includes(p.slug)).map((p) => (
+        {FEATURED.map((p) => (
           <div class="card">
+            {p.image && (
+              <a class="card-media" href={`/${p.category}/${p.slug}/`} tabindex="-1" aria-hidden="true">
+                <img src={p.image} alt={p.name} width="400" height="300" loading="lazy" decoding="async" />
+              </a>
+            )}
             <h3><a href={`/${p.category}/${p.slug}/`}>{p.name}</a></h3>
             <p>{p.metaDescription.slice(0, 110)}…</p>
           </div>
