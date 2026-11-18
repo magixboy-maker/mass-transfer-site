@@ -2,8 +2,8 @@
 // 身份口径铁律：factory-direct supply，绝不出现 our own factory / subsidiary / 持股 / 工厂实名
 
 export const SITE = {
-  name: 'Mass Transfer Equipment Co.',
-  legalName: 'Pingxiang Xinquan Chemical Packing Co., Ltd.',
+  name: 'MASS·TRANSFER',
+  legalName: 'MASS·TRANSFER',
   url: 'https://www.mass-transfer.com',
   domain: 'mass-transfer.com',
   tagline: 'Tower packing, random & structured packing, mist eliminators and column internals — factory-direct from China.',
@@ -12,16 +12,16 @@ export const SITE = {
   contact: {
     salesName: 'Jack Lee',
     salesTitle: 'Sales Manager',
-    salesEmail: 'jack.lee@pxxinquan.com',
-    formEmail: 'jack.lee@pxxinquan.com',
+    salesEmail: 'jacklee@mass-transfer.com',
+    formEmail: 'jacklee@mass-transfer.com',
     whatsapp: '+86-18979985818',
   },
   // 结构化数据：Organization
   org: {
     '@type': 'Organization',
-    name: 'Pingxiang Xinquan Chemical Packing Co., Ltd.',
+    name: 'MASS·TRANSFER',
     url: 'https://www.mass-transfer.com',
-    email: 'jack.lee@pxxinquan.com',
+    email: 'jacklee@mass-transfer.com',
   },
 };
 
@@ -45,6 +45,7 @@ export const NAV = [
   { label: 'Applications', href: '/applications/' },
   { label: 'Materials', href: '/materials/' },
   { label: 'Quality & Tests', href: '/quality/' },
+  { label: 'Blog', href: '/blog/' },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
 ];

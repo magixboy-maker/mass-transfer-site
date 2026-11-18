@@ -19,6 +19,17 @@ const FEATURED = FEATURED_SLUGS.map((s) => ALL_PRODUCTS.find((p) => p.slug === s
   (p): p is NonNullable<typeof p> => Boolean(p)
 );
 
+// 首页文章入口：取最新 3 篇技术文章
+const POSTS = (await Astro.glob('../content/blog/*.md'))
+  .sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime())
+  .slice(0, 3)
+  .map((p) => ({
+    slug: p.file.split('/').pop()!.replace(/\.md$/, ''),
+    title: p.frontmatter.title,
+    description: p.frontmatter.description,
+    pubDate: p.frontmatter.pubDate,
+  }));
+
 // 首页分类卡片：每个分类配一张代表图
 const CATEGORY_CARDS = [
   {
@@ -137,6 +148,25 @@ const CATEGORY_CARDS = [
         ))}
       </div>
       <p style="margin-top:16px;"><a href="/applications/">View all applications →</a></p>
+    </section>
+
+    <section style="margin-top:44px;">
+      <h2>Technical Guides</h2>
+      <p class="page-sub" style="margin-bottom:20px;">
+        How to choose between packing types, materials and internals — written for engineers, not for search engines.
+      </p>
+      <div class="grid">
+        {POSTS.map((post) => (
+          <div class="card">
+            <h3><a href={`/blog/${post.slug}/`}>{post.title}</a></h3>
+            <p>{post.description}</p>
+            <p style="margin-top:8px;font-size:13px;color:var(--text-muted);">
+              {new Date(post.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:16px;"><a href="/blog/">All technical articles →</a></p>
     </section>
 
     <section style="margin-top:44px;">

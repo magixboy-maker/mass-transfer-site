@@ -45,7 +45,6 @@ const canonicalUrl = canonical || new URL(url, SITE.url).toString();
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       ...SITE.org,
-      sameAs: ['https://www.xinquan.net.cn'],
     })} />
 
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
@@ -143,7 +142,7 @@ const canonicalUrl = canonical || new URL(url, SITE.url).toString();
           </div>
         </div>
         <div class="legal">
-          © {new Date().getFullYear()} {SITE.legalName} · Factory-direct supply of mass transfer equipment · <a href="https://www.xinquan.net.cn" target="_blank" rel="noopener">Group export entity: xinquan.net.cn</a>
+          © {new Date().getFullYear()} MASS·TRANSFER · Tower packing, internals &amp; mist eliminators — factory-direct supply
         </div>
       </div>
     </footer>
