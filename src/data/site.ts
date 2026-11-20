@@ -9,6 +9,9 @@ export const SITE = {
   tagline: 'Tower packing, random & structured packing, mist eliminators and column internals — factory-direct from China.',
   description:
     'Factory-direct supplier of mass transfer equipment: random and structured packing, mist eliminators and tower internals for distillation, absorption, scrubbing and carbon capture. ISO 9001-certified production.',
+  // Google Analytics 4 测量 ID（G-XXXXXXXXXX）。
+  // 留空则完全不输出统计脚本；填入后所有页面自动生效。
+  ga4Id: '',
   contact: {
     salesName: 'Jack Lee',
     salesTitle: 'Sales Manager',

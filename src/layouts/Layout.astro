@@ -15,6 +15,8 @@ const { title, description = SITE.description, ogImage = '/og.png', canonical, s
 const fullTitle = title.includes('Mass Transfer') ? title : title;
 const url = Astro.url.pathname;
 const canonicalUrl = canonical || new URL(url, SITE.url).toString();
+// GA4：SITE.ga4Id 为空时整段不输出，避免上线后出现无主脚本
+const ga4 = (SITE.ga4Id || '').trim();
 ---
 
 <!doctype html>
@@ -48,6 +50,17 @@ const canonicalUrl = canonical || new URL(url, SITE.url).toString();
     })} />
 
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+
+    <!-- Google Analytics 4 -->
+    {ga4 && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4}`}></script>
+        <script
+          is:inline
+          set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4}',{anonymize_ip:true});`}
+        />
+      </>
+    )}
   </head>
   <body>
     <header class="site-header">
