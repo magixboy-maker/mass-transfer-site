@@ -1,9 +1,9 @@
 ---
 title: "Wire Mesh vs Vane Mist Eliminator: How to Choose"
-description: "Compare wire mesh pads and vane mist eliminators: efficiency, pressure drop, capacity, fouling tolerance and when each is the right choice."
-pubDate: 2026-11-27
+description: "Compare wire mesh pads and vane mist eliminators: efficiency,
+  pressure drop, capacity, fouling tolerance and when each is the right choice."
+pubDate: 2026-11-20
 ---
-
 # Wire Mesh vs Vane Mist Eliminator: How to Choose
 
 Two mist eliminator technologies dominate industrial gas–liquid separation: the wire mesh pad and the vane (chevron) separator. They suit very different conditions, and choosing the wrong one leads to plugging, carryover or excessive pressure drop.
@@ -45,8 +45,9 @@ Vane separators are the choice for FGD scrubbers, cooling towers, gas dehydratio
 
 ## How to Decide
 
+
 | Condition | Recommendation |
-|---|---|
+| ------------------------------------------- | ----------------------------- |
 | Clean gas, moderate velocity, fine droplets | Wire mesh pad |
 | High gas velocity | Vane separator |
 | High liquid load | Vane separator |
@@ -54,6 +55,7 @@ Vane separators are the choice for FGD scrubbers, cooling towers, gas dehydratio
 | Need to wash in place | Vane separator |
 | Lowest pressure drop | Wire mesh pad |
 | Sub-10 µm droplet removal | Wire mesh (or mesh over vane) |
+
 
 ## Combining Both
 
