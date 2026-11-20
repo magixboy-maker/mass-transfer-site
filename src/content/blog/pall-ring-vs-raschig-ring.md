@@ -1,9 +1,9 @@
 ---
 title: "Pall Ring vs Raschig Ring: Which Random Packing to Choose"
-description: "Compare pall rings and Raschig rings: capacity, pressure drop, efficiency, cost and when to choose each for your column."
-pubDate: 2026-11-20
+description: "Compare pall rings and Raschig rings: capacity, pressure drop,
+  efficiency, cost and when to choose each for your column."
+pubDate: 2026-11-18
 ---
-
 # Pall Ring vs Raschig Ring: Which Random Packing to Choose
 
 When specifying random packing for a distillation or absorption column, the choice often comes down to the pall ring versus the Raschig ring. Both are hollow-cylinder geometries, but they perform very differently — and choosing the wrong one costs you either capacity or money.
